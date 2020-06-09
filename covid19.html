@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+  <h3>Evolución de la epidemia de COVID-19 en México</h3>
+  <p><b>Moisés Santilán</b></p>
+  <p>Actualización al 9 de junio</p> 
+
+  <p>En las primeras semanas de la epidemia discutía varios posibles escenarios. Si la tasa de contagios se mantenía elevada, la epidemia acabaría antes, pero la demanda hospitalaria podría saturar a nuestros sistemas de salud. Por otra parte, con una baja tasa de contagios, se podría garantizar atención médica a todas las personas que lo necesitaran, pero la epidemia tardaría mucho en ceder. A más de 100 días de que se confirmó el primer caso, hemos vivido en el país situaciones que fluctúan entre ambos extremos. Algunas ciudades han sido sevéramente golpeadas y se han reportado casos muy dramáticos. En algunas de estas ciudades, parece que la tasa de contagios se ha estacionado, y podría pronto empezar a disminuir. Sin embargo, en otras entidades, donde la epidemia se ha controlado mejor (particularmente Jalisco y Nuevo León), no hay incicios de que el pico de contagios esté cerca. Sin lugar a dudas, es bueno que la epidemia se haya controlado, pero no deja de tener costos e implicar contratiempos, económicos y sociales. Es difícil pensar que la economía pueda seguir prácticamente detenida por mucho tiempo más. Por otra parte, la gente se ha hartado del encierro, y está adoptando actitudes más riesgosas. En el caso de Nuevo León, creo que ya estamos viendo las consecuencias en la forma de un incremento sostenido de la tasa de contagios. Esperemos que las cosas no se salgan de control. Es necesario que encontremos mecanismos que nos permitan retomar nuestras actividades, al menos parcialmente, pero minimizando la posibilidad de que la epidemia repunte. En los próximos días discutiré algunas estrategias que se han implementado en otros países, y que tal vez podrían adaptarse al nuestro.</p>
+
+  <p><b>Material gráfico adicional</b></p>
+
+  <p>He estado elaborando material gráfico adicional, con el propósito de entender mejor cómo ha evolucionado la epidemia en el país. Sin embargo, para no saturar este escrito con demasiada información, incluyo a continuación los enlaces correspondientes.</p>
+
+  <ul>
+    <li>Gráficas de la evolución de la epidemia en cada una de las entidades federativas. <a href="https://cinvestav365-my.sharepoint.com/:f:/g/personal/msantillan_cinvestav_mx/Ej2344wkoaBGlazvS6VNPU0BjMXtskTGC1jBVlEKYU6WUw?e=02W4F3" target="_blank">Enlace</a></li>
+
+    <li>Mapa interactivo con la estimación actual de casos activos por cada 10 mil habitantes, en cada municipio del país. <a href="https://cinvestav365-my.sharepoint.com/:u:/g/personal/msantillan_cinvestav_mx/Ea_lXu0Syv9Folanjayl0F0BO9nK-Ie_YXLa3gwq_FBfng?e=VZKZCI" target="_blank">Enlace</a></li>
+
+    <li>Mapa animado con de la evolución de casos activos por cada 10 mil habitantes, en cada municipio del país. <a href="https://cinvestav365-my.sharepoint.com/:v:/g/personal/msantillan_cinvestav_mx/EctRukqOyvFHqpsXPnn7OqkBKjBfnAMvbWMJDzLCLL5XNg?e=oM2faH" target="_blank">Enlace</a></li>
+  </ul>
+
+  <p><b>Análisis de la epidemia a nivel nacional</b></p>
+
+  <p>En la Figura 1 se grafica la evolución del número de casos de COVID-19 confirmados diariamente en México, organizados de acuerdo a la fecha en que los casos confirmados presentaron sus primeros síntomas. Es decir, el número de casos confirmados en una fecha determinada representa los casos que presentaron sus primeros síntomas en dicha fecha. Los datos reportados por la Seretaría de Salud presentan un subregistro en los últimos días debido al retraso que existe entre la aparición de los primeros síntomas y la confirmación de un caso. Este subregistro se puede corregir parcialmente considerando la distribución de los tiempos de retraso de los casos ya confirmados. Así, los valores corregidos serán una estimación del número de casos que eventualmente se confirmarán en una fecha específica. Los datos así corregidos también se presentan en la Figura 1. Finalmente, también presento una curva que representa la evolución del llamado número reproductivo efectivo (Re). Este número es una estimación del número promedio de personas contagiadas por una persona enferma en una fecha determinada. De esta definición, podemos ver que si Re es menor que uno, el número de casos activos irá disminuyendo hasta que la epidemia se extinga. En caso contrario, la tasa de contagios tiende a crecer aeleradamente; tanto más, cuanto mayor sea el valor de Re. Así, para que la tasa de contagios empiece a disminuir, es necesario que el valor de Re se sostenga por abajo de 1. Podemos ver en la Figura 1 que el valor de Re ha tenido una tendencia a la baja en el país (aunque con marcadas fluctiaciones), pero no se ha sostenido en valores menores que 1 por tiempos prolongados. De hecho, a partir del 22 de mayo en que alcanzó su punto más bajo, ha empezado a crecer nuevamente, y su valor ya es nuevamente mayor que 1.</p>
+
+  <p>Es importante aclarar que en la figura 1, se grafican los casos confirmados por la Secretaría de Salud. Sin embargo, debido a que en el método centinela sólo aplican pruebas a una muestra de la población, el número real de casos que presentan síntomas lo suficientemente severos como para acudir a consulta, es entre 8 y 10 veces más grande. Además, están los otros casos que no presentan síntomas o los que los tienen muy leves (los llamados portadores asintomáticos). En México no se han hecho mediciones para estimar su cantidad, pero podrían aumentar el número de casos entre 2 y 5 veces. Es decir, 100,000 casos confirmados podrían significar un mínimo de 2 millones de casos reales, pero podrían ser tantos como 5 millones.</p>
+
+<div>
+        
+    <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+  <div id="ae035648-1205-4605-8ca1-4373946d0280" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+  <script type="text/javascript">
+    
+        window.PLOTLYENV=window.PLOTLYENV || {};
+        
+    if (document.getElementById("ae035648-1205-4605-8ca1-4373946d0280")) {
+        Plotly.newPlot(
+            'ae035648-1205-4605-8ca1-4373946d0280',
+            [{"error_y": {"array": [0.25099352443274725, 0.741028500706193, 0.5976036296017639, 0.6095557021938234, 0.6932202103380547, 1.0159261703229987, 1.0995906784672371, 1.1832551866115182, 1.5776735821486625, 1.290823839939847, 1.482057001412386, 1.3147279851239233, 2.1752772117504833, 1.5298652917805384, 1.673290162884939, 2.6533601154318376, 2.1514210808059318, 2.486086582264619, 2.9403410986125493, 3.406568763494363, 3.215394559164565, 3.10781630253814, 4.554247840024345, 3.7056386894319076, 5.451118296983566, 5.17640260397917, 5.248365326172404, 5.320690739768679, 5.081785429619231, 6.780304987309705, 5.943628313859506, 7.355284136870068, 7.2720524562768105, 11.351128148278804, 8.457663491736298, 9.15211589597709, 11.35340913108837, 10.673869677289417, 12.243084836373669, 12.125572522288508, 13.652464033164051, 14.893626005369924, 13.532212181327168, 21.464079506167536, 14.169410705291739, 14.68119295476663, 15.421725261773418, 18.302919400949577, 18.873457079926766, 16.90455823202433, 20.44685552534088, 18.25103652671146, 16.51014837390335, 22.5565174750775, 30.49245535231057, 22.08694851222276, 21.114777085223295, 26.86851699069439, 26.783528724461576, 24.105025673821274, 27.03201770929718, 31.322075383528045, 27.661324481895008, 36.82775335160022, 34.52691646539597, 31.37867242186303, 30.495575998971162, 30.75913857968726, 44.39178167413911, 34.21186487686191, 34.10598443914205, 47.998843875338935, 38.97206650063936, 53.58514305339213, 36.49175409257168, 48.30620041259681, 47.3486112191008, 46.902508218257026, 69.463117966352, 55.69786601824899, 57.725783419622985, 69.3426644757028, 82.0169465073036, 94.57141524835015, 111.08959818105632, 231.620650546648, 237.0207462434837, 450.41458177498544], "type": "data", "visible": true}, "marker": {"color": "steelblue"}, "name": "Estimados", "opacity": 0.5, "type": "bar", "x": ["2020-03-08", "2020-03-09", "2020-03-10", "2020-03-11", "2020-03-12", "2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03"], "xaxis": "x", "y": [21.00056237949011, 62.001660358494604, 50.001338998785975, 51.0013657787617, 58.001553238591725, 85.00227629793615, 92.00246375776621, 99.00265121759622, 132.00353495679494, 108.00289223737772, 124.00332071698921, 110.00294579732916, 182.004873955581, 128.0034278368921, 140.00374919660072, 222.00594515460972, 180.0064272515465, 208.00742704623158, 246.01097998607415, 285.01526499495634, 269.01680949830387, 260.01624709873244, 381.0272096697882, 310.02490671142135, 456.0447793172404, 433.0502526469906, 439.058788344106, 445.07945931950684, 425.0834784161422, 567.1316238247872, 497.12868979803216, 615.1757221304523, 608.190013572398, 949.3135369229396, 707.271476282326, 765.3142497387951, 949.3898339896948, 892.4461155120523, 1023.566480596615, 1013.633368168136, 1140.9369723500245, 1244.277298234327, 1130.3116526805902, 1792.3839360732227, 1182.8371791547834, 1225.1653953804469, 1286.5495103081255, 1526.3790246826327, 1573.072151570205, 1408.173221719862, 1701.9249173661062, 1518.0300048394904, 1372.1609877694486, 1873.3141473042074, 2529.495937514028, 1829.9736373928515, 1747.0215303259226, 2220.3531381355706, 2210.28234488599, 1985.6134994227161, 2222.713774823672, 2570.1980376198226, 2265.2518382352937, 3008.0091437694464, 2812.103625341949, 2547.644981785064, 2466.919777601271, 2477.888033397724, 3558.9767909625275, 2727.5043512731163, 2698.670446859568, 3769.803420952168, 3026.7058172368825, 4107.84394901445, 2749.5498865670497, 3556.0150788944093, 3383.0414150129427, 3226.069465353786, 4559.286219526273, 3437.2978393036788, 3297.7187212193776, 3582.67964105026, 3710.7305333656095, 3566.7529910117823, 3294.207121471343, 4967.361117254191, 3279.793463781416, 3406.309983647854], "yaxis": "y2"}, {"marker": {"color": "forestgreen"}, "name": "Reportados", "opacity": 0.5, "type": "bar", "x": ["2020-03-08", "2020-03-09", "2020-03-10", "2020-03-11", "2020-03-12", "2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05", "2020-06-06", "2020-06-07", "2020-06-08"], "xaxis": "x", "y": [21, 62, 50, 51, 58, 85, 92, 99, 132, 108, 124, 110, 182, 128, 140, 222, 180, 208, 246, 285, 269, 260, 381, 310, 456, 433, 439, 445, 425, 567, 497, 615, 608, 949, 707, 765, 949, 892, 1023, 1013, 1140, 1243, 1129, 1790, 1181, 1223, 1284, 1523, 1569, 1404, 1696, 1512, 1366, 1864, 2515, 1818, 1734, 2202, 2190, 1965, 2197, 2537, 2233, 2960, 2762, 2497, 2412, 2416, 3459, 2641, 2600, 3614, 2880, 3875, 2564, 3265, 3045, 2831, 3878, 2806, 2557, 2598, 2463, 2097, 1650, 2005, 989, 688, 350, 155, 51, 7, 0], "yaxis": "y2"}, {"line": {"color": "salmon"}, "mode": "lines", "name": "Re", "type": "scatter", "x": ["2020-03-08", "2020-03-09", "2020-03-10", "2020-03-11", "2020-03-12", "2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28"], "xaxis": "x", "y": [1.4043683589138134, 1.2906162464985995, 1.2519132653061225, 1.2513914656771798, 1.1425505824647455, 1.1162790697674418, 1.146074646074646, 1.1738977764245975, 1.1208642381929386, 1.1884354653662277, 1.2386253916355183, 1.1854333530769985, 1.1743922319847477, 1.2290277656142716, 1.1825329288431776, 1.1674789534325756, 1.1960301165643648, 1.2115532878230784, 1.1591483934570133, 1.1644918236804342, 1.1349349110485645, 1.1035071566213894, 1.0938116326403629, 1.1079092660821708, 1.1687360188226077, 1.165112430076882, 1.1913671649214357, 1.2002941441967028, 1.204200178561794, 1.1214818194009657, 1.1340193197153683, 1.134685171145982, 1.1198437811351063, 1.1079677531473617, 1.1633017138493238, 1.141981818247402, 1.1106264750243793, 1.0875133088576543, 1.0939392266396537, 1.0266886502545616, 1.0290810136660073, 1.0500292468242745, 1.0599206593563912, 1.0285135720384686, 1.0567444718290107, 1.1005079332799232, 1.0775005147351238, 1.0750627191722537, 1.1238604301252086, 1.1208014403738138, 1.0396245981157464, 1.0494284207569398, 1.0709063589989745, 1.036882216682907, 1.0513156776867432, 1.103080051260381, 1.0968474793616578, 1.0602142806992947, 1.0652936172884835, 1.0536523377738032, 1.0249377865968472, 1.0196134509315706, 1.0580901970301086, 1.0661693186949788, 1.0634660846846813, 1.0666052766668583, 1.0839603441795442, 1.0371315884442578, 1.0278870936122615, 1.0247349970521136, 1.0391520286194726, 1.0139520328164022, 1.0265680032649067, 1.0320053956948692, 1.0013750919014277, 0.9845184348571522, 1.021440271228746, 1.0098450410918218, 0.9913401519768765, 0.9924644226338994, 0.9683265411440054, 0.8643241527325268], "yaxis": "y"}, {"fill": "tonexty", "line": {"color": "salmon"}, "mode": "lines", "name": "Re", "showlegend": false, "type": "scatter", "x": ["2020-03-08", "2020-03-09", "2020-03-10", "2020-03-11", "2020-03-12", "2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28"], "xaxis": "x", "y": [1.4043683589138134, 1.2906162464985993, 1.2519132653061225, 1.2513914656771798, 1.1425505824647455, 1.1162790697674418, 1.1460746460746463, 1.1738977943793882, 1.1208642719986712, 1.1884355425102753, 1.238625536618463, 1.1854335585398972, 1.1743924602918805, 1.2290280736250379, 1.1825332391090495, 1.1674793031420025, 1.1960305221626015, 1.21155379121678, 1.1591489850500332, 1.1644925472978667, 1.1349357690786686, 1.1035081008743677, 1.0938127078174114, 1.1079104139965603, 1.1687373976552506, 1.1651137872670352, 1.1913685811879249, 1.2002955118551701, 1.2042016431221345, 1.1214832626381768, 1.1340209624163347, 1.134687335486802, 1.1198468180795929, 1.1079714624288117, 1.1633071057240971, 1.1419879839877782, 1.1106329727595172, 1.0875198830108819, 1.0939465684904754, 1.0266957384977793, 1.029088902452784, 1.0500389047622636, 1.0599319623854764, 1.0285255785280203, 1.0567590748874855, 1.1005272505125043, 1.077520803666459, 1.075084869832407, 1.1238875403757072, 1.1208310104349868, 1.0396518608325216, 1.049459435323087, 1.0709429143764337, 1.0369194622907203, 1.051359620477134, 1.103133322448256, 1.0969045970376563, 1.0602722569727145, 1.0653584354966958, 1.0537268067241636, 1.0250171247176483, 1.0197039560444305, 1.0582096386015896, 1.066310888592073, 1.0636411032810862, 1.0668108791035835, 1.0842276777697397, 1.0374421439749013, 1.0282775109450575, 1.025281981552807, 1.0398771415511658, 1.0148381264877508, 1.0277850109167064, 1.0336883084886002, 1.0036050278293867, 0.9876149041926682, 1.027276824993304, 1.01862872826895, 1.0065459457052266, 1.0242643238828326, 1.0608620765655075, 0.8948816107726829], "yaxis": "y"}, {"line": {"color": "darkgrey"}, "mode": "lines", "showlegend": false, "type": "scatter", "x": ["2020-03-08", "2020-03-09", "2020-03-10", "2020-03-11", "2020-03-12", "2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05", "2020-06-06", "2020-06-07", "2020-06-08"], "xaxis": "x", "y": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "yaxis": "y"}],
+            {"template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Fig 1. Evoluci\u00f3n de la epidemia de COVID-19 en M\u00e9xico"}, "xaxis": {"anchor": "y", "domain": [0.0, 0.94], "title": {"text": "Fecha de Inicio de S\u00edntomas"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "N\u00famero Reproductivo Efectivo (Re)"}}, "yaxis2": {"anchor": "x", "overlaying": "y", "side": "right", "title": {"text": "Casos Diarios"}}},
+            {"responsive": true}
+        )
+    };
+    
+  </script>
+</div>
+
+  <p>La epidemia de COVID-19 no se ha comportado de manera homogénea en el país. De todos es sabido que, desafortunadamente, ha habido ciudades que han sido muy afectadas, pero otras no lo han sido tanto. En el siguiente <a href="https://cinvestav365-my.sharepoint.com/:f:/g/personal/msantillan_cinvestav_mx/Ej2344wkoaBGlazvS6VNPU0BjMXtskTGC1jBVlEKYU6WUw?e=02W4F3" target="_blank">enlace</a>, se pueden consultas curvas detalladas, análogas a las de la Figura 1, que ilustran la evolución de la epidemia en todas las entidades federativas. A continuación, tataré de presentar un análisis comparativo resumido. Una manera de determinar el estado actual de la epidemia en cada entidad federativa es estimar el conteo actual de casos activos, y dividir por el tamaño de la población correspondiente. El número de casos activos en una fecha determinada se estima como la cantidad de casos que iempezaron a presentar síntomas en un periodo de 14 días anteriores a dicha fecha. La razón de esto es que la mayoría de las personas se cura después de 2 semanas. En la Figura 2 se representan los números estimados de casos activos para cada entidad federativa, normalizados por el tamaño de la población correspondiente. Tener una alta densidad de casos activos representa un problema, pues mayor será la probabilidad de que alguien se contagie en espacios públicos, y mayor será la demanda de servicios médicos. Para tener una mejor idea de los números reportados en la Figura 2, un valor de 1 significa que hay un caso activo confirmado por cada 10,000 habitantes. Sin embargo, como hemos visto, los casos activos representan alrededor del 10% de los casos sintomáticos. En este sentido, una barra de altura 1 correspondería a un caso sintomático activo por cada 1000 habitantes. Si además consideramos a los portadores asintomáticos, la proporción de casos activos aumenta aún más. No existem estimaciones certeras de la candidad de portadores asintomáticos, pero hay quienes sostienen que podría haber entre 2 y 5 de ellos por cada sintomático. Si este fuera el caso, una barra de tamaño 1 incicaría que hay un individuo contagiado activo por cada 200 a 500 habitantes. Es importante señalar que la gráfica de la Figura 2, representa una fotografía del estado actual de la epidemia. Con el paso del tiempo, la altura de las barras ha ido cambiando, conforme la epidemia se recrudece o disminuye en cada entidad.</p>
+
+<div>
+        
+    <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+    <div id="535ca430-3232-41fc-ae4a-26676d23a823" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+  <script type="text/javascript">
+    
+        window.PLOTLYENV=window.PLOTLYENV || {};
+        
+    if (document.getElementById("535ca430-3232-41fc-ae4a-26676d23a823")) {
+        Plotly.newPlot(
+            '535ca430-3232-41fc-ae4a-26676d23a823',
+            [{"error_y": {"array": [0.736528797298014, 0.9867718367766963, 1.2105052435439263, 0.9379314332221951, 0.25974749642072537, 0.30657225409615557, 0.6634384879635368, 0.5205635898159942, 0.582697580361454, 0.46322133412833527, 0.42000192711287565, 0.2351136752599924, -0.021194098270976413, 0.3521445003065547, 0.22427450278222547, 0.3344873888602212, 0.30071164259420374, 0.48882308998054574, 0.1839811935078908, 0.5333157219330052, 0.39044438007093535, 0.3633534131880606, 0.5427670609878551, 0.319678426763078, 1.1447435835400857, 0.5841042492095911, 0.9572974338022131, 0.5101765599200331, 0.7634939848849631, 0.3869446240387801, 0.32592353257216805, 0.21927385908926572, 0.09712503347836512], "type": "data", "visible": true}, "marker": {"color": "darksalmon"}, "showlegend": false, "type": "bar", "x": ["Ags", "BC", "BCS", "Camp", "Chis", "Chih", "CdMx", "Coah", "Col", "Dgo", "Mex", "Gto", "Gro", "Hgo", "Jal", "Mich", "Mor", "Nay", "NL", "Oax", "Pue", "Qro", "QRoo", "SLP", "Sin", "Son", "Tab", "Tamps", "Tlax", "Ver", "Yuc", "Zac", "Pa\u00eds"], "y": [4.124975150217831, 5.336411993534422, 3.4766426239962325, 3.470347412444001, 2.45156725510219, 1.2617690333410323, 12.823237256280647, 2.4276004496873105, 1.3868928629535602, 2.1426047802116686, 4.443320230912495, 2.403461451289153, 2.4241859155589323, 3.013212131257381, 2.2157975720039467, 2.364836529902422, 2.331891516546351, 2.8383996360254735, 1.4247144139773023, 3.2103106920770896, 3.2860711500617428, 2.2764018005866817, 3.58737115378112, 2.1805016453088553, 6.734214912915281, 4.434052614855485, 9.466058588307494, 3.0916632752219555, 4.279082904902702, 2.5939105686330244, 2.9877357588694244, 0.8532414310830521, 3.968811344592942]}],
+            {"template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Fig. 2. Distribuci\u00f3n de casos activos en M\u00e9xico"}, "yaxis": {"title": {"text": "Casos activos por cada diez mil habitantes"}}},
+            {"responsive": true}
+        )
+    };
+    
+  </script>
+</div>
+
+  <p>En la Figura 2 se aprecia que el estado actual de la epidemia es bastante heterogéneo entre entidades federativas. Pero éste también es el caso entre municipios. En el siguiente <a href="https://cinvestav365-my.sharepoint.com/:u:/g/personal/msantillan_cinvestav_mx/Ea_lXu0Syv9Folanjayl0F0BO9nK-Ie_YXLa3gwq_FBfng?e=VZKZCI" target="_blank">enlace</a> se puede consultar un mapa interactivo con el número de casos positivos (por cada 10,000 habitantes), en cada uno de los municipios del país. Una cosa interesante es que, además de las grandes ciudades, hay un buen número de poblaciones pequeñas con una alta densidad de casos positivos.</p>
+
+  <p>Como mencioné, la Figura 2 presenta una instantanea del estado actual de la epidemia, pero no nos dice si las barras están subiendo o bajando. Esta última información nos la proporciona en número reproductivo efectivo, que estima el número promedio de contagios debidos a un paciente activo. En la Figura 3 se muestra la distribución de valores de este parámetro en las distintas entidades del país. Observe que en muy pocas, Re tiene valores menores que 1. Esto explica por qué no se ha alcanzado el pico de contagios en el país</p>
+
+<div>     
+  <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+  <div id="249f77ee-7817-4e69-84ac-0608893eb65f" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+  <script type="text/javascript">
+    
+        window.PLOTLYENV=window.PLOTLYENV || {};
+        
+    if (document.getElementById("249f77ee-7817-4e69-84ac-0608893eb65f")) {
+        Plotly.newPlot(
+            '249f77ee-7817-4e69-84ac-0608893eb65f',
+            [{"error_y": {"array": [0.05185175832873955, 0.11205456934964077, 0.1494088194843606, 0.09959690724615897, 0.01939816402516979, 0.060750025149776475, 0.020996132773680492, 0.07541159751774242, 0.1859369917221066, 0.05115225068164047, 0.048303947667439895, 0.01186471231290406, -0.07613861848370648, 0.020044616679734357, 0.021510680425128603, 0.03926698642157881, 0.016580936381026257, 0.01665475571951688, 0.022230950381565497, 0.06478661853474914, 0.04455241715355385, 0.0327257328333672, 0.039058260754244775, 0.0273115246099053, 0.08920721643209688, 0.025634067826807695, 0.042490063756270846, 0.045243305823488886, 0.06410139565885843, 0.07776624512136732, 0.01180880652905471, 0.03915347205763158, 0.009273753293249722], "type": "data", "visible": true}, "marker": {"color": "darksalmon"}, "showlegend": false, "type": "bar", "x": ["Ags", "BC", "BCS", "Camp", "Chis", "Chih", "CdMx", "Coah", "Col", "Dgo", "Mex", "Gto", "Gro", "Hgo", "Jal", "Mich", "Mor", "Nay", "NL", "Oax", "Pue", "Qro", "QRoo", "SLP", "Sin", "Son", "Tab", "Tamps", "Tlax", "Ver", "Yuc", "Zac", "Pa\u00eds"], "y": [1.2008387650117707, 1.0879826453880352, 1.1198907086086693, 0.9605103472263802, 0.887707472035338, 0.8657198153997852, 1.0289519140430134, 1.058724207482442, 1.3362668082854645, 1.1947256815805374, 0.9762938888415744, 1.0413044118144938, 0.7646422996675724, 0.921402736686143, 1.121566799521937, 0.8924254117922283, 1.0062644884752363, 1.0118087660954367, 0.9763107651380812, 1.0812092660776493, 1.0477917906688061, 1.1221637455605022, 1.0532107219642297, 1.087571547324756, 0.9798648336126318, 0.7627331397714363, 1.0857499832822617, 0.9971498691706286, 1.0816666673796171, 0.9887693917614077, 0.9390453991066301, 1.1922389057895568, 1.0182613132539131]}, {"line": {"color": "darkgrey"}, "mode": "lines", "showlegend": false, "type": "scatter", "x": ["Ags", "BC", "BCS", "Camp", "Chis", "Chih", "CdMx", "Coah", "Col", "Dgo", "Mex", "Gto", "Gro", "Hgo", "Jal", "Mich", "Mor", "Nay", "NL", "Oax", "Pue", "Qro", "QRoo", "SLP", "Sin", "Son", "Tab", "Tamps", "Tlax", "Ver", "Yuc", "Zac", "Pa\u00eds"], "y": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]}],
+            {"template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Fig. 3. Distribuci\u00f3n del n\u00famero reproductivo efectivo en M\u00e9xico"}, "yaxis": {"title": {"text": "Casos activos por cada mil habitantes"}}},
+            {"responsive": true}
+        )
+    };
+    
+  </script>
+</div>
+
+  <p>Para tener una imagen más clara de la evolución espacio temporal de la epidemia en México, en el siguiente <a href="https://cinvestav365-my.sharepoint.com/:v:/g/personal/msantillan_cinvestav_mx/EctRukqOyvFHqpsXPnn7OqkBKjBfnAMvbWMJDzLCLL5XNg?e=oM2faH" target="_blank">enlace</a>, presento una animación en la que se aprecia mejor cómo el número de casos activos (por cada 10 mil habitantes) ha ido evolucionando en los diferentes municipios del país.</p>
+
+  <p><b>Evolución de la epidemia en Nuevo León</b></p>
+
+  <p>A continuación, presento un análisis de la evolucoón de la epidemia en el estado de Nuevo León. La Figura 4 es análoga a la Figura 1 (que ilustra la evolición de la epidemia a nivel país). Podemos que el número de contagios ha presentado un comportamiento oscilatorio, al igual que Re. Este parámetro tenía valores menores que 1 hacia el 24 de mayo. Pero, a partir de entonces, ha empezado a crecer. Todo parece indicar que en las próximas semanas el número de contagios siga aumentando. Por una parte, esa es la tendencia que muestran las gráficas. Pero además, se aprecia un ambiente de excesiva confianza. Como que el hecho de que en los pasados meses no hayamos llegado a una situación crítica, ha llevado a la gente menospreciar los riesgos. Esto, y el inicio de a reactivación económica, son una combinación muy peligrosa.</p>
+
+<div>
+        
+    <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+  <div id="0e4937a4-a0f0-45b4-bcf1-59c84e2f23ab" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+  <script type="text/javascript">
+    
+        window.PLOTLYENV=window.PLOTLYENV || {};
+        
+    if (document.getElementById("0e4937a4-a0f0-45b4-bcf1-59c84e2f23ab")) {
+        Plotly.newPlot(
+            '0e4937a4-a0f0-45b4-bcf1-59c84e2f23ab',
+            [{"error_y": {"array": [0.0, 0.851368664748902, 0.1891930366108665, 0.4729825915271668, 0.1891930366108665, 0.5675791098325993, 0.7567721464434651, 0.6621756281380335, 0.2837895549163001, 0.7567721464434651, 0.5675791098325993, 0.4729825915271668, 0.4729825915271668, 0.2837895549163001, 0.37838607322173257, 0.1891930366108665, 0.09459651830543347, 0.1891930366108665, 0.2837895549163001, 0.1891930366108665, 0.09459651830543347, 0.1891930366108665, 0.37838607322173257, 0.5675791098325993, 0.4729825915271668, 0.9459651830543336, 0.7567721464434651, 0.1891930366108665, 0.6621756281380335, 0.9459651830543336, 1.2297547379706355, 1.040561701359767, 1.2297547379706355, 2.270316439330397, 1.2297547379706355, 0.851368664748902, 1.040561701359767, 0.851368664748902, 0.5675791098325993, 0.7567721464434651, 0.6621756281380335, 0.6621756281380335, 0.851368664748902, 1.040561701359767, 0.7567721464434651, 1.5135442928869303, 1.1351582196652004, 1.2297547379706355, 1.9865268844141042, 2.270316439330397, 3.121685104079301, 1.3262014776723419, 1.3262014776723419, 2.178759570461697, 3.599689725110636, 1.802360798892245, 1.7098878971808844, 2.7548193899025435, 7.409514221117178, 2.1879143252656768, 2.663547874236478, 4.292701601012105, 3.056866931935218, 3.63002948167307, 4.687392788774851, 4.304748479487124, 5.54834248467229, 3.3481377062677566, 4.7897663337434935, 2.5901056894623196, 3.0783892273505344, 5.216745444365465, 5.350931490174666, 4.219098115657744, 3.247102999030435, 5.182534499044401, 6.656989505445736, 4.75810195246153, 8.409088265762023, 7.491046861316832, 6.616051434313107, 4.513852647902496, 6.745946124896719, 5.530532866439934, 7.848417963522969, 16.251876306709775, 15.745624927683807, 23.454950326144605], "type": "data", "visible": true}, "marker": {"color": "steelblue"}, "name": "Estimados", "opacity": 0.5, "type": "bar", "x": ["2020-03-08", "2020-03-09", "2020-03-10", "2020-03-11", "2020-03-12", "2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03"], "xaxis": "x", "y": [0.0, 9.0, 2.0, 5.0, 2.0, 6.0, 8.0, 7.0, 3.0, 8.0, 6.0, 5.0, 5.0, 3.0, 4.0, 2.0, 1.0, 2.0, 3.0, 2.0, 1.0, 2.0, 4.0, 6.0, 5.0, 10.0, 8.0, 2.0, 7.0, 10.0, 13.0, 11.0, 13.0, 24.0, 13.0, 9.0, 11.0, 9.0, 6.0, 8.0, 7.0, 7.0, 9.0, 11.0, 8.0, 16.0, 12.0, 13.0, 21.0, 24.0, 33.0, 14.007799442896935, 14.007799442896935, 23.012813370473538, 38.02116991643454, 19.02118171683389, 18.03011712214166, 29.04852203011712, 78.13050752928055, 23.051339285714285, 28.0625, 45.150837988826815, 32.125209614309675, 38.148686416992724, 49.2192393736018, 45.20134228187921, 58.259507829977636, 35.156599552572715, 50.25181869054281, 27.151175811870104, 32.215246636771305, 54.454800673778784, 55.619369369369366, 43.63163841807909, 33.522624434389144, 53.09380329732802, 67.0919540229885, 47.04307334109429, 81.54009433962264, 70.32530120481928, 59.86666666666667, 38.91905672402804, 55.49769888231426, 41.44615384615385, 51.860182370820674, 89.33790737564324, 66.11042944785278, 66.25559947299078], "yaxis": "y2"}, {"marker": {"color": "forestgreen"}, "name": "Reportados", "opacity": 0.5, "type": "bar", "x": ["2020-03-08", "2020-03-09", "2020-03-10", "2020-03-11", "2020-03-12", "2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05", "2020-06-06", "2020-06-07", "2020-06-08"], "xaxis": "x", "y": [0, 9, 2, 5, 2, 6, 8, 7, 3, 8, 6, 5, 5, 3, 4, 2, 1, 2, 3, 2, 1, 2, 4, 6, 5, 10, 8, 2, 7, 10, 13, 11, 13, 24, 13, 9, 11, 9, 6, 8, 7, 7, 9, 11, 8, 16, 12, 13, 21, 24, 33, 14, 14, 23, 38, 19, 18, 29, 78, 23, 28, 45, 32, 38, 49, 45, 58, 35, 50, 27, 32, 54, 55, 43, 33, 52, 65, 45, 77, 65, 54, 34, 47, 33, 38, 58, 36, 28, 18, 13, 1, 0, 0], "yaxis": "y2"}, {"line": {"color": "salmon"}, "mode": "lines", "name": "Re", "type": "scatter", "x": ["2020-03-08", "2020-03-09", "2020-03-10", "2020-03-11", "2020-03-12", "2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27"], "xaxis": "x", "y": [1.2777777777777781, 1.119047619047619, 1.093167701863354, 0.9872448979591837, 1.0137362637362637, 0.8995535714285714, 0.8549107142857142, 0.8275862068965517, 0.8015873015873016, 0.8015873015873016, 0.7981366459627329, 0.81203007518797, 0.8809523809523809, 1.0, 1.0892857142857142, 1.2857142857142856, 1.7142857142857142, 1.8214285714285716, 1.5654761904761902, 1.4047619047619047, 1.376984126984127, 1.1719576719576719, 1.1082251082251082, 1.2649769585253456, 1.4352678571428572, 1.3571428571428572, 1.267857142857143, 1.2242524916943522, 1.0793650793650793, 0.8843058350100603, 0.8503861003861004, 0.8520408163265306, 0.8316326530612245, 0.8430735930735931, 0.9553571428571429, 0.9916943521594686, 1.0871080139372824, 1.1833976833976834, 1.2220077220077221, 1.2380952380952381, 1.3741496598639455, 1.3641456582633054, 1.3125463766561056, 1.2738960935675876, 1.1940127058467733, 1.149693638915308, 1.0175657982434922, 1.0240782973879257, 1.0711162582242721, 1.2453365699190597, 1.1323162558812134, 1.2255075036779999, 1.290995337687892, 1.2229541022685957, 0.9691675726173117, 1.0542259261518878, 1.0678360396994657, 1.0341941198789006, 1.0336124569865748, 1.153392615805606, 1.0431788672279745, 0.9883829897361125, 0.9619553123047871, 0.9899749481190936, 0.9623609922132601, 1.0054989810193509, 1.0653345122126612, 1.0958899837913045, 1.0396194743364149, 1.115109113421899, 1.1607992884601115, 1.1254118616298148, 1.0613186325970496, 1.087775603453112, 0.9769345375065746, 0.9168354181617414, 0.9404870737904144, 0.9973264433959389, 0.9932961682965964, 1.056821983073309, 1.0805643167827503], "yaxis": "y"}, {"fill": "tonexty", "line": {"color": "salmon"}, "mode": "lines", "name": "Re", "showlegend": false, "type": "scatter", "x": ["2020-03-08", "2020-03-09", "2020-03-10", "2020-03-11", "2020-03-12", "2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27"], "xaxis": "x", "y": [1.2777777777777777, 1.119047619047619, 1.093167701863354, 0.9872448979591837, 1.0137362637362637, 0.8995535714285714, 0.8549107142857143, 0.8275862068965517, 0.8015873015873016, 0.8015873015873016, 0.7981366459627329, 0.8120300751879699, 0.8809523809523809, 1.0, 1.0892857142857142, 1.2857142857142856, 1.7142857142857144, 1.8214285714285716, 1.5654761904761907, 1.4047619047619047, 1.376984126984127, 1.1719576719576719, 1.1082251082251082, 1.2649769585253456, 1.4352678571428572, 1.3571428571428572, 1.267857142857143, 1.2242524916943522, 1.0793650793650793, 0.8843058350100603, 0.8503861003861004, 0.8520408163265305, 0.8316326530612245, 0.8430735930735931, 0.9553571428571429, 0.9916943521594686, 1.0871080139372822, 1.1833976833976834, 1.222007722007722, 1.2380952380952381, 1.3741496598639455, 1.3641456582633054, 1.3125534396350735, 1.2739092777949945, 1.1940332893854797, 1.1497228763631284, 1.0176006462465255, 1.0241192567024102, 1.0711713747298606, 1.245432274601043, 1.1324052261434043, 1.225605125836767, 1.2911200600080606, 1.2230754893808844, 0.9692539421193547, 1.0543424610979346, 1.067969502026378, 1.0343115518615789, 1.0337153575290523, 1.1534904619927349, 1.043239568404347, 0.9884358959884132, 0.9620423026644401, 0.9901425172576904, 0.9625995096037734, 1.005836402695212, 1.0658722737183117, 1.0967879033389805, 1.0407114366557368, 1.1170332747509966, 1.1637120496328166, 1.1290362610608324, 1.065211434622498, 1.093053341781474, 0.9823054754518955, 0.9235545009073451, 0.9535933769794926, 1.020692787186116, 1.0326401323237848, 1.135147614099614, 1.2715550832949354], "yaxis": "y"}, {"line": {"color": "darkgrey"}, "mode": "lines", "showlegend": false, "type": "scatter", "x": ["2020-03-08", "2020-03-09", "2020-03-10", "2020-03-11", "2020-03-12", "2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05", "2020-06-06", "2020-06-07", "2020-06-08"], "xaxis": "x", "y": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "yaxis": "y"}],
+            {"template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Fig 4. Evoluci\u00f3n de la epidemia de COVID-19 en Nuevo Le\u00f3n"}, "xaxis": {"anchor": "y", "domain": [0.0, 0.94], "title": {"text": "Fecha de Inicio de S\u00edntomas"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "N\u00famero Reproductivo Efectivo (Re)"}}, "yaxis2": {"anchor": "x", "overlaying": "y", "side": "right", "title": {"text": "Casos Diarios"}}},
+            {"responsive": true}
+        )
+    };
+    
+  </script>
+</div>
+
+  <p>En la Figura 5, comparo las curvas (corregidas) de casos activos en Nuevo León, con los municipios del área metropolitana de Monterrey, y con el resto del estado. En casi todos lados, la epidemia está más o menos estable. Se observan incrementos escalonados en diferentes municipios, que en muchos casos se asocian con brotes en lugares específicos, pero hasta la fecha no ha habido un incremento sostenido en el número de casos activos. Podemos apreciar en las Figuras anteriores que, hasta el 20 de abril, no se podía hablar de una epidemia generalizada en el estado, sino de brotes focalizados en diferentes partes. Sin embargo, a partir de entonces, se ha reportado un número significativo de casos a lo largo y ancho del estado. Ya no se puede decir que la epidemia esté focalizada, y más bien se trata de un brote generalizado.</p>
+
+<div>
+        
+    <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>    
+  <div id="7802d99c-672e-431e-a258-88680856ce2b" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+  <script type="text/javascript">
+    
+        window.PLOTLYENV=window.PLOTLYENV || {};
+        
+    if (document.getElementById("7802d99c-672e-431e-a258-88680856ce2b")) {
+        Plotly.newPlot(
+            '7802d99c-672e-431e-a258-88680856ce2b',
+            [{"line": {"color": "#1f77b4"}, "mode": "lines", "name": "Nuevo Le\u00f3n", "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [5.861684990972142, 37.12400494282357, 43.96263743229107, 45.91653242928178, 53.732112417244636, 58.616849909721424, 62.524639903702855, 66.43242989768429, 67.40937739617964, 71.31716739016106, 64.47853490069356, 63.501587402198204, 60.57074490671213, 61.547692405207485, 57.63990241122606, 50.80126992175855, 45.916532429281766, 46.89347992777712, 44.93958493078642, 43.96263743229107, 48.84737492476785, 51.77821742025392, 50.80126992175856, 53.732112417244636, 61.547692405207485, 73.27106238715177, 82.06358987360998, 91.83306485856355, 113.3259098254614, 125.04927980740568, 131.8879122968732, 138.7265447863407, 141.65738728182677, 142.63433478032212, 140.6804397833314, 139.70349228483605, 144.58822977731282, 146.54212477430355, 147.51907227279892, 142.63433478032212, 147.5190722727989, 146.54212477430352, 135.79570229085465, 143.61128227881747, 158.26549475624785, 179.77567884231578, 184.6677723247435, 192.49070830265734, 207.15700562072138, 237.48233187956845, 249.23568319898396, 258.05661405778335, 275.68743001947166, 344.2379508681082, 351.12500011323107, 366.8446677624394, 398.2730283056309, 409.1375240984771, 422.9751171230213, 438.7956767754308, 469.26355539810993, 512.4866005694635, 524.364103992402, 536.311499959773, 544.2683408648977, 558.171303229697, 583.1224949343875, 561.2500110868808, 581.3823922667602, 586.8327142628239, 595.0815332113543, 629.9805764571115, 639.1549128501288, 672.2311618690959, 698.2086987003304, 701.3775445100244, 705.9856185793901, 714.0061389938381, 730.8609304648337, 755.3499213599222, 802.6251297251443, 826.5793796621457, 863.4773435108963, 901.0142920761948, 918.1125062376834]}, {"fill": "tonexty", "line": {"color": "#1f77b4"}, "mode": "lines", "name": "Nuevo Le\u00f3n", "showlegend": false, "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [6.14500024579666, 38.918334890045514, 46.08750184347495, 48.13583525874051, 56.32916891980272, 61.450002457966605, 65.54666928849771, 69.64333611902882, 70.6675028266616, 74.76416965719271, 67.59500270376327, 66.57083599613048, 63.498335873232165, 64.52250258086494, 60.42583575033384, 53.2566687969044, 48.135835258740514, 49.16000196637329, 47.111668551107726, 46.08750184347495, 51.20833538163883, 54.28083550453716, 53.256668796904385, 56.32916891980272, 64.52250258086494, 76.81250307245824, 86.03000344115324, 96.271670517481, 118.80333808540209, 131.0933385769954, 138.26250553042485, 145.43167248385427, 148.5041726067526, 149.5283393143854, 147.48000589911985, 146.45583919148703, 151.5766727296509, 153.62500614491648, 154.64917285254927, 149.5283393143854, 154.64917285254927, 153.6250061449165, 142.35917236095594, 150.55250602201815, 165.91500663650982, 188.46618592636506, 193.5952971647434, 201.7969085260201, 217.17300821943556, 248.96713841957964, 261.2908802643439, 270.54034612551663, 289.02684682300963, 360.90331358386004, 368.1269720271714, 384.61326175294795, 417.5734975382023, 428.9722388002112, 443.49105258865006, 460.0909322466671, 492.04554865862394, 537.3760753871895, 549.8395965947509, 562.3818242118276, 570.7342209411711, 585.3267285671502, 611.5251048374217, 588.6424704197581, 609.7945653809008, 615.5531672413106, 624.3141627373426, 661.1172019493208, 670.9293803211618, 706.0935144755467, 733.895135693581, 737.8700514121263, 743.2378582846437, 752.7895709509669, 771.74125745579, 799.9785206522948, 857.1837582801138, 893.1864604457797, 953.2272490565115, 1037.9869233493073, 1242.5464997157335]}, {"line": {"color": "#ff7f0e"}, "mode": "lines", "name": "Apocada", "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [0.0, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.0, 0.0, 0.0, 0.976947498495357, 0.976947498495357, 1.953894996990714, 1.953894996990714, 1.953894996990714, 1.953894996990714, 3.907789993981428, 5.861684990972142, 5.861684990972142, 7.815579987962856, 13.677264978934998, 17.585054972916424, 21.492844966897852, 21.492844966897852, 22.469792465393212, 22.469792465393212, 21.492844966897856, 23.446739963888568, 26.37758245937464, 27.354529957869996, 27.354529957869993, 26.377582459374636, 30.285372453356064, 31.262319951851424, 29.30842495486071, 27.35452995787, 24.423687462383924, 31.265997946826896, 32.24452172888317, 36.15441343427916, 40.06430513967514, 43.000404714831085, 42.02661314659586, 44.96376750260219, 47.90249982373859, 55.73702549869701, 53.78734065437198, 53.79682361936655, 49.889033625385125, 50.877050496636485, 52.84360297091213, 54.83179240478217, 54.842873598506195, 56.81998183865222, 55.85517991002469, 58.82300209238774, 59.81582057780442, 62.79593575362767, 59.87843547808677, 56.020927485459595, 60.014067508025704, 57.07374204754507, 66.13907806195765, 69.3152680251315, 69.46901267779052, 70.12397687854296, 71.49617145486732, 70.05928350561668, 72.84470178742632, 68.63360046675493, 70.9447754401484, 69.94586489457559, 80.11255629346094, 77.33769852724805, 88.43257212281378, 107.99654662073453, 104.27549607814119]}, {"fill": "tonexty", "line": {"color": "#ff7f0e"}, "mode": "lines", "name": "Apocada", "showlegend": false, "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [0.0, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 0.0, 0.0, 0.0, 1.0241667076327767, 1.0241667076327767, 2.0483334152655535, 2.0483334152655535, 2.0483334152655535, 2.0483334152655535, 4.096666830531107, 6.145000245796661, 6.145000245796661, 8.193333661062214, 14.338333906858875, 18.43500073738998, 22.531667567921087, 22.531667567921087, 23.555834275553863, 23.555834275553863, 22.531667567921087, 24.58000098318664, 27.65250110608497, 28.676667813717746, 28.676667813717746, 27.65250110608497, 31.749167936616075, 32.773334644248855, 30.7250012289833, 28.676667813717746, 25.604167690819416, 32.777473494356094, 33.80341399489198, 37.90244588262723, 42.00147777036247, 45.079893980567114, 44.05927899432075, 47.13888255999191, 50.220261986356284, 58.43491840432881, 56.39132337948777, 56.4019972084505, 52.3053303779194, 53.341957161619206, 55.40453898858844, 57.49147878885779, 57.503953407658365, 59.57841858912714, 58.56792566385238, 61.68206000168624, 62.724097701427276, 65.85208733408986, 62.794623038820134, 58.75463318632836, 62.94748055178879, 59.86430659992774, 69.38966402924723, 72.73940672267652, 72.9133910643056, 73.65612262901851, 75.12954943208202, 73.6710193298546, 76.67082763718184, 72.32721414857824, 74.90565398277434, 74.12618218758168, 85.71068603185613, 83.1004602079069, 99.31237160903717, 132.44975115641918, 142.893237946095]}, {"line": {"color": "#2ca02c"}, "mode": "lines", "name": "Escobedo", "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 2.930842495486071, 3.907789993981428, 3.907789993981428, 3.907789993981428, 5.861684990972142, 6.838632489467499, 7.815579987962856, 7.815579987962856, 9.76947498495357, 11.723369981944284, 11.723369981944284, 11.723369981944284, 12.70031748043964, 12.70031748043964, 10.746422483448928, 9.769474984953568, 9.769474984953568, 10.746422483448924, 9.769474984953568, 8.792527486458212, 8.792527486458212, 9.76947498495357, 8.792527486458212, 10.746422483448928, 16.608107474421068, 17.585580400770063, 17.5861058286237, 20.518524607670688, 22.47347046036868, 30.297461775803328, 32.254512703054175, 31.277565204558815, 32.25766863331431, 32.25766863331431, 31.280721134818947, 32.26715159830888, 35.212753257469615, 35.22751242114428, 37.21516069089482, 47.03052099803951, 52.92121467482286, 52.93229586854688, 50.977350015848884, 45.11781288904166, 45.12734157023584, 47.0971178646144, 48.10275750124287, 49.09355053740819, 52.06917312351944, 50.125616136590814, 49.22484565040558, 46.3219801313188, 41.56989149602613, 32.884939177880334, 30.33246712384334, 28.501495150145182, 28.501495150145182, 31.399328206635502, 32.06327079122099, 33.04114773921851, 31.813002666977976, 37.35953187465383, 40.065948877805326, 39.069180404253316, 41.39168720460171]}, {"fill": "tonexty", "line": {"color": "#2ca02c"}, "mode": "lines", "name": "Escobedo", "showlegend": false, "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 3.0725001228983304, 4.096666830531107, 4.096666830531107, 4.096666830531107, 6.145000245796661, 7.169166953429437, 8.193333661062214, 8.193333661062214, 10.241667076327767, 12.29000049159332, 12.29000049159332, 12.29000049159332, 13.314167199226096, 13.314167199226096, 11.265833783960543, 10.241667076327767, 10.241667076327767, 11.265833783960543, 10.241667076327767, 9.21750036869499, 9.21750036869499, 10.241667076327767, 9.21750036869499, 11.265833783960545, 17.410834029757204, 18.435592001691017, 18.436183265992053, 21.510457181793488, 23.55997312566111, 31.762772526413425, 33.8146576630654, 32.79049095543262, 33.818209384451805, 33.818209384451805, 32.79404267681903, 33.828883213414535, 36.917996771068914, 36.93461020582496, 39.02093938563366, 49.31425937390723, 55.49191464937811, 55.504389268178684, 53.45487332431106, 47.31229491438476, 47.32302500199479, 49.389242117985226, 50.44572980087354, 51.485496455496246, 54.608456041071506, 52.57179397035527, 51.633632848174614, 48.592803064953245, 43.62220651557898, 34.527012370598044, 31.88477446085886, 29.976767668000996, 29.976767668000996, 33.112907310108895, 33.886473421141446, 35.046400360537945, 33.88899216823118, 40.61504786110136, 44.9780317996197, 43.93151991847487, 60.72524499436368]}, {"line": {"color": "#d62728"}, "mode": "lines", "name": "Guadalupe", "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [0.976947498495357, 1.953894996990714, 1.953894996990714, 1.953894996990714, 3.907789993981428, 3.907789993981428, 4.884737492476785, 5.861684990972142, 6.838632489467499, 6.838632489467499, 6.838632489467499, 6.838632489467499, 6.838632489467499, 6.838632489467499, 5.861684990972142, 4.884737492476785, 4.884737492476785, 5.861684990972142, 4.884737492476785, 6.838632489467499, 8.792527486458212, 7.815579987962856, 6.838632489467499, 9.76947498495357, 10.746422483448928, 12.700317480439642, 14.654212477430356, 15.631159975925712, 19.53894996990714, 20.515897468402496, 21.492844966897852, 23.446739963888565, 22.46979246539321, 21.492844966897852, 19.538949969907137, 21.49284496689785, 22.469792465393205, 20.515897468402493, 22.46979246539321, 21.492844966897852, 20.515897468402496, 20.515897468402493, 17.58505497291642, 17.58505497291642, 17.58505497291642, 16.60915833012834, 17.586631256477336, 17.587156684330974, 18.565155038533614, 21.501254613689557, 24.438408969695892, 28.354088789327648, 34.22997546647037, 83.18470928421311, 86.12397208503054, 87.10724156018894, 102.801127981732, 105.74672964089274, 106.73211545757805, 110.66416955042206, 116.55486322720543, 136.18189011025345, 140.11712381109237, 139.1560376162006, 140.15838478281145, 140.19019820063073, 143.2342312835192, 98.25651514810771, 102.27529841175829, 104.30215533231255, 96.69665742668671, 113.16778104041704, 116.36752210095305, 128.39750993586802, 128.0028851563787, 115.1860813404916, 118.46471468067963, 125.4759526049397, 125.82054796988817, 125.31758709750589, 132.54682525001533, 142.8466119714848, 146.27569758704695, 165.76539309034382, 172.73291349138898]}, {"fill": "tonexty", "line": {"color": "#d62728"}, "mode": "lines", "name": "Guadalupe", "showlegend": false, "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [1.0241667076327767, 2.0483334152655535, 2.0483334152655535, 2.0483334152655535, 4.096666830531107, 4.096666830531107, 5.120833538163883, 6.14500024579666, 7.169166953429436, 7.169166953429436, 7.169166953429436, 7.169166953429436, 7.169166953429436, 7.169166953429436, 6.14500024579666, 5.120833538163883, 5.120833538163883, 6.14500024579666, 5.120833538163883, 7.169166953429437, 9.21750036869499, 8.193333661062214, 7.169166953429437, 10.241667076327767, 11.265833783960543, 13.314167199226096, 15.36250061449165, 16.386667322124428, 20.483334152655534, 21.50750086028831, 22.531667567921087, 24.58000098318664, 23.555834275553863, 22.531667567921087, 20.483334152655534, 22.531667567921087, 23.555834275553863, 21.50750086028831, 23.555834275553863, 22.531667567921087, 21.50750086028831, 21.50750086028831, 18.43500073738998, 18.43500073738998, 18.43500073738998, 17.412016558359273, 18.436774530293086, 18.437365794594122, 19.462715030828967, 22.541131241033607, 25.620734806704768, 29.72628094070192, 35.88726393273745, 87.21642827020138, 90.29840517394874, 91.32968776755666, 107.78696218739431, 110.87607574504868, 111.90974139381723, 116.03372251915363, 122.21137779462451, 142.79385956490478, 146.92142154595814, 145.91511390213995, 146.96788168949104, 147.0037116378372, 150.20371980106447, 103.04922202908128, 107.27097064590183, 109.40156886924045, 101.44548517108954, 118.78121454711788, 122.15793698443504, 134.87895234465574, 134.5168021037493, 121.16075455374427, 124.72503226048367, 132.29640170293294, 132.81222631286707, 132.48589960597135, 141.51301922737895, 154.4344380984155, 161.078432918402, 196.6572408506811, 247.03841607834752]}, {"line": {"color": "#9467bd"}, "mode": "lines", "name": "Monterrey", "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [2.930842495486071, 9.76947498495357, 11.723369981944284, 10.746422483448926, 12.70031748043964, 16.608107474421068, 18.56200247141178, 21.492844966897852, 22.469792465393212, 23.446739963888568, 22.469792465393212, 23.446739963888568, 24.423687462383924, 24.423687462383917, 21.49284496689785, 19.538949969907137, 18.56200247141178, 21.492844966897852, 22.46979246539321, 19.538949969907137, 19.538949969907137, 19.53894996990714, 17.585054972916424, 17.585054972916424, 17.585054972916424, 20.515897468402493, 21.49284496689785, 27.354529957869993, 34.19316244733749, 38.100952441318924, 37.12400494282356, 40.05484743830964, 41.031794936805, 41.03179493680499, 41.03179493680499, 39.07789993981427, 40.05484743830963, 42.98568993379571, 42.985689933795705, 40.054847438309636, 42.98568993379571, 38.10095244131892, 34.193162447337485, 31.26231995185142, 34.19316244733749, 34.19631501445932, 36.15336257857187, 35.17641508007652, 34.1999930094348, 42.02503574080342, 45.94071556043518, 45.94702742095543, 49.86270724058719, 49.86481231692002, 53.79154799789703, 55.75808694821384, 65.57552921511007, 70.48240545309886, 76.38206287592581, 76.40422526337386, 76.42638765082188, 86.23805422672523, 99.98603018421852, 110.82858184062879, 114.78556276050428, 118.7505660835168, 128.67139158478628, 153.45295795025646, 158.52772351198854, 163.5782058266491, 167.953333535935, 185.52223348654528, 188.04829719480892, 202.18616594507176, 221.11440965682806, 217.97791107536176, 219.29788475553815, 222.74920728357324, 227.05221001072314, 228.01606456033716, 256.56624903191033, 263.4922413108178, 275.17518072731434, 281.8554440636829, 280.76488800747245]}, {"fill": "tonexty", "line": {"color": "#9467bd"}, "mode": "lines", "name": "Monterrey", "showlegend": false, "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [3.07250012289833, 10.241667076327767, 12.29000049159332, 11.265833783960543, 13.314167199226096, 17.410834029757204, 19.459167445022757, 22.531667567921087, 23.555834275553863, 24.58000098318664, 23.555834275553863, 24.58000098318664, 25.604167690819416, 25.604167690819416, 22.531667567921087, 20.483334152655534, 19.459167445022757, 22.531667567921087, 23.555834275553863, 20.483334152655534, 20.483334152655534, 20.483334152655534, 18.43500073738998, 18.43500073738998, 18.43500073738998, 21.50750086028831, 22.531667567921087, 28.676667813717746, 35.84583476714718, 39.94250159767829, 38.918334890045514, 41.99083501294384, 43.01500172057662, 43.01500172057662, 43.01500172057662, 40.966668305311075, 41.990835012943855, 45.06333513584218, 45.06333513584219, 41.990835012943855, 45.06333513584219, 39.942501597678294, 35.84583476714719, 32.773334644248855, 35.84583476714719, 35.84938235295339, 37.901263354025154, 36.87709664639238, 35.85352120306064, 44.05750382127421, 48.16304995527136, 48.17015339804419, 52.275699532041344, 52.278068727253604, 56.39605831469502, 58.45862350191088, 68.7542842411958, 73.90003793149374, 80.08778341240145, 80.1127326500026, 80.13768188760375, 90.42684366961045, 104.84478050997907, 116.21884109239284, 120.37089675994194, 124.53199495059974, 134.94414620667123, 160.95154332401654, 166.28653159776243, 171.5942399255845, 176.21842087433808, 194.71486156392018, 197.41063650629482, 212.35453568174194, 232.40204680411458, 229.18533547257277, 230.79001301567598, 234.87051611385198, 239.7696542811457, 241.18321798334478, 274.41546956648136, 286.21064828375546, 305.32358274282547, 322.41487945042763, 364.3290702964767]}, {"line": {"color": "#8c564b"}, "mode": "lines", "name": "Santa Catarina", "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 2.930842495486071, 2.930842495486071, 2.930842495486071, 3.907789993981428, 3.907789993981428, 3.907789993981428, 3.907789993981428, 3.907789993981428, 3.907789993981428, 3.907789993981428, 4.884737492476785, 4.884737492476785, 4.884737492476785, 6.838632489467499, 4.884737492476785, 5.861684990972142, 5.861684990972142, 5.861684990972142, 5.861684990972142, 5.861684990972142, 5.861684990972142, 6.838632489467499, 5.861684990972142, 7.815579987962856, 9.771051268514487, 9.771051268514487, 9.771051268514487, 8.79462919787277, 9.772628112302101, 8.795680613806743, 9.774206077432165, 8.797258578936809, 14.671574027905997, 15.650626602734196, 17.610843576387957, 19.575807946134667, 22.51771981437674, 24.488491447747368, 21.556072668700377, 25.480739299061717, 30.386572587013394, 30.390796252920552, 31.377251527118645, 31.377251527118645, 31.383614210682502, 35.33386829585493, 29.45955284688574, 29.472374467427958, 29.505694440878216, 27.571042129793096, 27.68818117725899, 28.92558892261433, 32.087410295636154, 33.55736185164401, 31.989112560910872, 31.00741596865472, 29.042961780027294, 29.042961780027294, 32.479553496402126, 31.998390394507283, 36.35660522373473, 41.046770617627054, 42.966028570107184, 41.958769012950235]}, {"fill": "tonexty", "line": {"color": "#8c564b"}, "mode": "lines", "name": "Santa Catarina", "showlegend": false, "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 4.096666830531107, 4.096666830531107, 4.096666830531107, 4.096666830531107, 4.096666830531107, 4.096666830531107, 4.096666830531107, 5.120833538163883, 5.120833538163883, 5.120833538163883, 7.169166953429437, 5.120833538163884, 6.145000245796661, 6.145000245796661, 6.14500024579666, 6.14500024579666, 6.14500024579666, 6.14500024579666, 7.169166953429436, 6.14500024579666, 8.193333661062214, 10.243440869230872, 10.243440869230872, 10.243440869230872, 9.21986542589913, 10.245215350993169, 9.221048643360392, 10.246991211686376, 9.222824504053602, 15.382039921123802, 16.408575823968835, 18.46402512520954, 20.52481861654213, 23.609778815507497, 25.677110113044627, 22.602836197243192, 26.718500910045876, 31.86308180104923, 31.867836816602246, 32.90270788233421, 32.90270788233421, 32.90987387200345, 37.05437096472383, 30.895155547653626, 30.909606173333678, 30.947180634382633, 28.920593483119433, 29.05298473035139, 30.371874811267208, 33.70620053410686, 35.290754993386074, 33.682399327615165, 32.65288634012833, 30.592665349302326, 30.592665349302326, 34.39877287438751, 34.156205036134175, 39.33341993446276, 45.77837693003127, 50.31282907721801, 49.25445602951584]}, {"line": {"color": "#8c564b"}, "mode": "lines", "name": "San Nicol\u00e1s", "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [0.0, 0.976947498495357, 0.976947498495357, 1.953894996990714, 1.953894996990714, 1.953894996990714, 1.953894996990714, 1.953894996990714, 1.953894996990714, 2.930842495486071, 3.907789993981428, 3.907789993981428, 3.907789993981428, 3.907789993981428, 4.884737492476785, 3.907789993981428, 3.907789993981428, 2.930842495486071, 2.930842495486071, 2.930842495486071, 3.907789993981428, 3.907789993981428, 3.907789993981428, 3.907789993981428, 2.930842495486071, 3.907789993981428, 5.861684990972142, 6.838632489467499, 7.815579987962856, 8.792527486458212, 10.746422483448926, 11.723369981944284, 11.723369981944284, 13.677264978934998, 13.677264978935, 14.654212477430356, 14.654212477430356, 14.654212477430352, 14.654212477430352, 13.677264978934996, 11.72336998194428, 11.72336998194428, 10.746422483448924, 9.769474984953568, 9.76947498495357, 10.747473339156205, 10.747473339156205, 11.72599712121248, 11.726522549066118, 12.705572879429422, 13.684098343054844, 12.707150844559488, 14.664201771810333, 16.62230692146673, 18.580412071123128, 18.583573059454643, 19.567900139787334, 22.509812008029407, 23.4994169838097, 27.43147107665372, 29.393804391834394, 27.442552270377742, 28.42847252854105, 27.4547017939961, 30.409335547260724, 33.36399998882855, 33.38207610416392, 40.341108279995424, 40.36675152107986, 41.380179981356996, 44.455203188313725, 44.572342235779615, 46.79091663872529, 46.173618981552984, 49.605903852741505, 51.96232119236971, 53.43723284300426, 58.53286480508773, 59.8607499742587, 59.85373877506693, 64.81679369903588, 62.43697861738919, 66.13526981591109, 64.14173286880707, 75.13829149848006]}, {"fill": "tonexty", "line": {"color": "#8c564b"}, "mode": "lines", "name": "Santa Nicol\u00e1s", "showlegend": false, "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [0.0, 1.0241667076327767, 1.0241667076327767, 2.0483334152655535, 2.0483334152655535, 2.0483334152655535, 2.0483334152655535, 2.0483334152655535, 2.0483334152655535, 3.0725001228983304, 4.096666830531107, 4.096666830531107, 4.096666830531107, 4.096666830531107, 5.120833538163883, 4.096666830531107, 4.096666830531107, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 4.096666830531107, 4.096666830531107, 4.096666830531107, 4.096666830531107, 3.0725001228983304, 4.096666830531107, 6.145000245796661, 7.169166953429437, 8.193333661062214, 9.21750036869499, 11.265833783960543, 12.29000049159332, 12.29000049159332, 14.338333906858873, 14.338333906858873, 15.36250061449165, 15.36250061449165, 15.36250061449165, 15.36250061449165, 14.338333906858873, 12.29000049159332, 12.29000049159332, 11.265833783960543, 10.241667076327767, 10.241667076327767, 11.267016312562614, 11.267016312562614, 12.292956813098495, 12.29354807739953, 13.320081219954833, 14.346023788280817, 13.321857080648037, 15.373742217300006, 17.426814022990072, 19.47988582868014, 19.483443771667716, 20.515917196678515, 23.60087739564388, 24.639292514980344, 28.76327364031674, 30.82110599671808, 28.775748259117318, 29.810016262157166, 28.78942690738209, 31.888714787580124, 34.98804046156578, 35.008403871274, 42.31323195718827, 42.342133208548375, 43.40743232021769, 46.64265742608494, 46.7750486733169, 49.12285493243339, 48.50656740129545, 52.148954216975994, 54.65626326400778, 56.25024565090676, 61.71558594666115, 63.262718168726245, 63.389536550127524, 69.12114651270142, 67.52906896858995, 72.93303943563339, 70.84001567334371, 125.45468309181881]}, {"line": {"color": "#7f7f7f"}, "mode": "lines", "name": "San Pedro", "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [1.953894996990714, 22.469792465393212, 27.354529957869996, 29.308424954860712, 33.216214948842136, 34.193162447337485, 35.17010994583285, 35.17010994583285, 34.19316244733749, 35.17010994583285, 28.33147745636535, 26.377582459374636, 21.49284496689785, 21.49284496689785, 19.538949969907137, 17.585054972916424, 12.70031748043964, 10.746422483448924, 7.815579987962856, 5.861684990972142, 3.907789993981428, 2.930842495486071, 3.907789993981428, 2.930842495486071, 2.930842495486071, 2.930842495486071, 2.930842495486071, 1.953894996990714, 1.953894996990714, 1.953894996990714, 1.953894996990714, 1.953894996990714, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.976947498495357, 0.0, 0.0, 0.0, 0.976947498495357, 2.930842495486071, 2.930842495486071, 2.930842495486071, 2.930842495486071, 2.930842495486071, 2.930842495486071, 2.930842495486071, 2.930842495486071, 2.930842495486071, 2.930842495486071, 2.930842495486071, 2.930842495486071, 2.930842495486071, 1.953894996990714, 0.0, 3.920433947307521, 6.862345815549592, 7.842983104963616, 9.805316420144287, 12.748816392915293, 17.654649680866967, 21.579316311228308, 22.56101290348446, 23.54323999779817, 24.526529802020683, 26.496306096399238, 27.483869617692346, 28.474662653857667, 29.466536849228085, 26.542871375472572, 23.600959507230503, 23.6400058563858, 22.710087416348465, 19.76658744357746, 14.860754155625784, 10.936087525264442, 9.95439093300829, 8.972163838694579, 7.988874034472067, 7.492924361281547, 6.505360839988441, 5.51456780382312, 7.363713403084073, 6.366944929532064, 6.366944929532064]}, {"fill": "tonexty", "line": {"color": "#7f7f7f"}, "mode": "lines", "name": "San Pedro", "showlegend": false, "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [2.0483334152655535, 23.555834275553863, 28.676667813717746, 30.7250012289833, 34.82166805951441, 35.84583476714718, 36.87000147477996, 36.87000147477996, 35.84583476714719, 36.87000147477997, 29.700834521350522, 27.65250110608497, 22.531667567921087, 22.531667567921087, 20.483334152655534, 18.43500073738998, 13.314167199226096, 11.265833783960543, 8.193333661062214, 6.14500024579666, 4.096666830531107, 3.0725001228983304, 4.096666830531107, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 2.0483334152655535, 2.0483334152655535, 2.0483334152655535, 2.0483334152655535, 2.0483334152655535, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 1.0241667076327767, 0.0, 0.0, 0.0, 1.0241667076327767, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 3.0725001228983304, 2.0483334152655535, 0.0, 4.110898602481415, 7.1958588014467795, 8.224178867768568, 10.28201122416991, 13.368759758771922, 18.513340649775277, 22.62900536257796, 23.65851835006479, 24.688628845477794, 25.719936457608796, 27.786153573599233, 28.82227784677933, 29.862044501402032, 30.903031029927117, 27.83864430859053, 24.75368410962517, 24.797814525369155, 23.826893127711514, 20.740144593109505, 15.595563702106148, 11.479898989303464, 10.450386001816636, 9.42027550640363, 8.388967894272628, 7.9358228059756595, 6.899698532795565, 5.85993187817286, 8.561917111694573, 7.5154052305497405, 7.5154052305497405]}, {"line": {"color": "#2ca02c"}, "mode": "lines", "name": "Resto del Estado", "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [0.0, 0.9769474984953632, 0.9769474984953632, 0.9769474984953632, 0.9769474984953703, 0.9769474984953703, 0.9769474984953703, 0.9769474984953774, 0.9769474984953632, 1.9538949969907122, 1.9538949969907122, 1.9538949969907193, 2.9308424954860683, 2.9308424954860826, 3.9077899939814316, 2.9308424954860683, 3.9077899939814174, 3.9077899939814245, 3.9077899939814316, 5.861684990972151, 6.838632489467514, 8.792527486458205, 9.769474984953561, 10.746422483448924, 13.677264978934993, 16.608107474421075, 19.538949969907144, 20.5158974684025, 22.469792465393198, 22.469792465393198, 23.44673996388859, 23.44673996388856, 25.400634960879287, 25.400634960879287, 26.377582459374622, 25.4006349608793, 25.4006349608793, 24.42368746238394, 24.42368746238398, 25.400634960879287, 24.423687462383924, 26.377582459374636, 25.40063496087933, 38.10095244131894, 44.939584930786424, 56.669260046974415, 57.64778382903067, 58.62630761108696, 68.4020877302842, 75.24913154722347, 79.16481136685519, 82.10196572286156, 85.04227600912799, 89.94595918860034, 91.91037956725523, 97.80051345321112, 98.78853032446244, 93.93331115933495, 92.0089502760091, 88.12860842054386, 95.9890228749905, 100.90593735666624, 96.04813838627149, 100.01087220260126, 98.06811429714173, 98.09356503139713, 107.03586506904122, 106.15073618491004, 109.19046687373236, 114.3242491220185, 119.44041371103202, 119.75278450427447, 125.27359640286204, 140.61095321096616, 149.2387454484017, 174.7652521598642, 172.47778246093355, 169.2000600081252, 178.0875404640949, 199.20304043553438, 198.26595154924814, 201.23514433299408, 198.98219035929355, 192.85302152873396, 195.48351601511683]}, {"fill": "tonexty", "line": {"color": "#2ca02c"}, "mode": "lines", "name": "Resto del Estado", "showlegend": false, "type": "scatter", "x": ["2020-03-13", "2020-03-14", "2020-03-15", "2020-03-16", "2020-03-17", "2020-03-18", "2020-03-19", "2020-03-20", "2020-03-21", "2020-03-22", "2020-03-23", "2020-03-24", "2020-03-25", "2020-03-26", "2020-03-27", "2020-03-28", "2020-03-29", "2020-03-30", "2020-03-31", "2020-04-01", "2020-04-02", "2020-04-03", "2020-04-04", "2020-04-05", "2020-04-06", "2020-04-07", "2020-04-08", "2020-04-09", "2020-04-10", "2020-04-11", "2020-04-12", "2020-04-13", "2020-04-14", "2020-04-15", "2020-04-16", "2020-04-17", "2020-04-18", "2020-04-19", "2020-04-20", "2020-04-21", "2020-04-22", "2020-04-23", "2020-04-24", "2020-04-25", "2020-04-26", "2020-04-27", "2020-04-28", "2020-04-29", "2020-04-30", "2020-05-01", "2020-05-02", "2020-05-03", "2020-05-04", "2020-05-05", "2020-05-06", "2020-05-07", "2020-05-08", "2020-05-09", "2020-05-10", "2020-05-11", "2020-05-12", "2020-05-13", "2020-05-14", "2020-05-15", "2020-05-16", "2020-05-17", "2020-05-18", "2020-05-19", "2020-05-20", "2020-05-21", "2020-05-22", "2020-05-23", "2020-05-24", "2020-05-25", "2020-05-26", "2020-05-27", "2020-05-28", "2020-05-29", "2020-05-30", "2020-05-31", "2020-06-01", "2020-06-02", "2020-06-03", "2020-06-04", "2020-06-05"], "y": [0.0, 1.024166707632773, 1.024166707632773, 1.02416670763278, 1.024166707632773, 1.02416670763278, 1.024166707632773, 1.024166707632773, 1.0241667076327872, 2.04833341526556, 2.04833341526556, 2.048333415265546, 3.07250012289834, 3.072500122898333, 4.096666830531113, 3.072500122898333, 4.096666830531106, 4.096666830531106, 4.096666830531092, 6.145000245796652, 7.169166953429432, 9.217500368694985, 10.241667076327765, 11.265833783960545, 14.338333906858878, 17.410834029757197, 20.48333415265553, 21.507500860288303, 23.55583427555385, 23.55583427555385, 24.580000983186636, 24.580000983186636, 26.628334398452182, 26.628334398452196, 27.652501106084955, 26.628334398452154, 26.628334398452125, 25.604167690819395, 25.604167690819395, 26.628334398452168, 25.604167690819395, 27.65250110608497, 26.628334398452168, 39.94250159767826, 47.111668551107726, 59.408764214313464, 60.43470471484932, 61.4606452153852, 71.70940746332536, 78.88804015644496, 82.9935862904421, 86.07318985611323, 89.15634514317082, 94.29850143824501, 96.35868082957188, 102.53570256225674, 103.57232934595646, 98.4847226773046, 96.4696355560144, 92.40386931841397, 100.64767336282006, 105.80472887262397, 100.71422412182613, 104.87275066602973, 102.8369606607929, 102.86562461946971, 112.25183330721518, 111.33114341859164, 114.52635613256712, 119.92800061301176, 125.3100247956636, 125.66306812161554, 131.5035863791353, 147.72397892102072, 156.92668998030808, 184.05761280702723, 181.72169971044946, 178.4540048731277, 188.1228980455602, 211.4126882843683, 211.47854120453496, 216.1034452133748, 215.2614965092679, 213.865281992193, 245.33598604856616]}],
+            {"template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "Fig. 5. Evoluci\u00f3n de casos activos en Nuevo Le\u00f3n"}, "xaxis": {"title": {"text": "Fecha de Inicio de S\u00edntomas"}}, "yaxis": {"title": {"text": "N\u00famero de casos activos"}}},
+            {"responsive": true}
+        )
+    };
+    
+  </script>
+</div>
+
+<p><b>Proyecciones</b></p>
+
+  <p>Con base en el análisis de tendencias y en los resultados del modelo, he venido haciendo proyecciones diarias y semanales para la epidemia de coronavirus a nivel nacional. En la siguiente tabla, se presentan dichas proyecciones, junto con los datos confirmados posteriormente.</p>
+
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th>Fecha</th>
+        <th>Proy. Diarias</th>
+        <th>Proy. Sem. Min</th>
+        <th>Proy. Sem. Max</th>
+        <th>Reporte</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>16-Mar</td>
+        <td>84</td>
+        <td></td>
+        <td></td>
+        <td>82</td>
+      </tr>
+      <tr>
+        <td>17-Mar</td>
+        <td>125</td>
+        <td></td>
+        <td></td>
+        <td>93</td>
+      </tr>
+      <tr>
+        <td>18-Mar</td>
+        <td>150</td>
+        <td></td>
+        <td></td>
+        <td>118</td>
+      </tr>
+      <tr>
+        <td>19-Mar</td>
+        <td>150</td>
+        <td></td>
+        <td></td>
+        <td>164</td>
+      </tr>
+      <tr>
+        <td>20-Mar</td>
+        <td>218</td>
+        <td></td>
+        <td></td>
+        <td>203</td>
+      </tr>
+      <tr>
+        <td>21-Mar</td>
+        <td>267</td>
+        <td></td>
+        <td></td>
+        <td>251</td>
+      </tr>
+      <tr>
+        <td>22-Mar</td>
+        <td>324</td>
+        <td></td>
+        <td></td>
+        <td>316</td>
+      </tr>
+      <tr>
+        <td>23-Mar</td>
+        <td>403</td>
+        <td></td>
+        <td></td>
+        <td>367</td>
+      </tr>
+      <tr>
+        <td>24-Mar</td>
+        <td>440</td>
+        <td></td>
+        <td></td>
+        <td>405</td>
+      </tr>
+      <tr>
+        <td>25-Mar</td>
+        <td>452</td>
+        <td></td>
+        <td></td>
+        <td>475</td>
+      </tr>
+      <tr>
+        <td>26-Mar</td>
+        <td>537</td>
+        <td></td>
+        <td></td>
+        <td>585</td>
+      </tr>
+      <tr>
+        <td>27-Mar</td>
+        <td>720</td>
+        <td></td>
+        <td></td>
+        <td>717</td>
+      </tr>
+      <tr>
+        <td>28-Mar</td>
+        <td>850</td>
+        <td></td>
+        <td></td>
+        <td>848</td>
+      </tr>
+      <tr>
+        <td>29-Mar</td>
+        <td>990</td>
+        <td></td>
+        <td></td>
+        <td>993</td>
+      </tr>
+      <tr>
+        <td>30-Mar</td>
+        <td>1115</td>
+        <td></td>
+        <td></td>
+        <td>1094</td>
+      </tr>
+      <tr>
+        <td>31-Mar</td>
+        <td>1240</td>
+        <td></td>
+        <td></td>
+        <td>1215</td>
+      </tr>
+      <tr>
+        <td>1-Apr</td>
+        <td>1425</td>
+        <td></td>
+        <td></td>
+        <td>1378</td>
+      </tr>
+      <tr>
+        <td>2-Apr</td>
+        <td>1560</td>
+        <td></td>
+        <td></td>
+        <td>1510</td>
+      </tr>
+      <tr>
+        <td>3-Apr</td>
+        <td>1690</td>
+        <td></td>
+        <td></td>
+        <td>1688</td>
+      </tr>
+      <tr>
+        <td>4-Apr</td>
+        <td>1856</td>
+        <td></td>
+        <td></td>
+        <td>1890</td>
+      </tr>
+      <tr>
+        <td>5-Apr</td>
+        <td>2060</td>
+        <td></td>
+        <td></td>
+        <td>2143</td>
+      </tr>
+      <tr>
+        <td>6-Apr</td>
+        <td>2317</td>
+        <td></td>
+        <td></td>
+        <td>2439</td>
+      </tr>
+      <tr>
+        <td>7-Apr</td>
+        <td>2680</td>
+        <td></td>
+        <td></td>
+        <td>2785</td>
+      </tr>
+      <tr>
+        <td>8-Apr</td>
+        <td>3090</td>
+        <td></td>
+        <td></td>
+        <td>3181</td>
+      </tr>
+      <tr>
+        <td>9-Apr</td>
+        <td>3540</td>
+        <td></td>
+        <td></td>
+        <td>3441</td>
+      </tr>
+      <tr>
+        <td>10-Apr</td>
+        <td>3800</td>
+        <td></td>
+        <td></td>
+        <td>3844</td>
+      </tr>
+      <tr>
+        <td>11-Apr</td>
+        <td>4210</td>
+        <td></td>
+        <td></td>
+        <td>4219</td>
+      </tr>
+      <tr>
+        <td>12-Apr</td>
+        <td>4640</td>
+        <td></td>
+        <td></td>
+        <td>4661</td>
+      </tr>
+      <tr>
+        <td>13-Apr</td>
+        <td>5130</td>
+        <td></td>
+        <td></td>
+        <td>5014</td>
+      </tr>
+      <tr>
+        <td>14-Apr</td>
+        <td>5465</td>
+        <td></td>
+        <td></td>
+        <td>5399</td>
+      </tr>
+      <tr>
+        <td>15-Apr</td>
+        <td>5810</td>
+        <td></td>
+        <td></td>
+        <td>5847</td>
+      </tr>
+      <tr>
+        <td>16-Apr</td>
+        <td>6295</td>
+        <td></td>
+        <td></td>
+        <td>6297</td>
+      </tr>
+      <tr>
+        <td>17-Apr</td>
+        <td>6790</td>
+        <td></td>
+        <td></td>
+        <td>6875</td>
+      </tr>
+      <tr>
+        <td>18-Apr</td>
+        <td>7395</td>
+        <td></td>
+        <td></td>
+        <td>7497</td>
+      </tr>
+      <tr>
+        <td>19-Apr</td>
+        <td>8070</td>
+        <td>9000</td>
+        <td>9500</td>
+        <td>8261</td>
+      </tr>
+      <tr>
+        <td>20-Apr</td>
+        <td>8870</td>
+        <td></td>
+        <td></td>
+        <td>8772</td>
+      </tr>
+      <tr>
+        <td>21-Apr</td>
+        <td>9560</td>
+        <td></td>
+        <td></td>
+        <td>9501</td>
+      </tr>
+      <tr>
+        <td>22-Apr</td>
+        <td>10340</td>
+        <td></td>
+        <td></td>
+        <td>10544</td>
+      </tr>
+      <tr>
+        <td>23-Apr</td>
+        <td>11320</td>
+        <td></td>
+        <td></td>
+        <td>11633</td>
+      </tr>
+      <tr>
+        <td>24-Apr</td>
+        <td>12455</td>
+        <td></td>
+        <td></td>
+        <td>12872</td>
+      </tr>
+      <tr>
+        <td>25-Apr</td>
+        <td>13760</td>
+        <td></td>
+        <td></td>
+        <td>13842</td>
+      </tr>
+      <tr>
+        <td>26-Apr</td>
+        <td>15000</td>
+        <td>13500</td>
+        <td>14500</td>
+        <td>14677</td>
+      </tr>
+      <tr>
+        <td>27-Apr</td>
+        <td>16220</td>
+        <td></td>
+        <td></td>
+        <td>15529</td>
+      </tr>
+      <tr>
+        <td>28-Apr</td>
+        <td>16340</td>
+        <td></td>
+        <td></td>
+        <td>16752</td>
+      </tr>
+      <tr>
+        <td>29-Apr</td>
+        <td>17805</td>
+        <td></td>
+        <td></td>
+        <td>17799</td>
+      </tr>
+      <tr>
+        <td>30-Apr</td>
+        <td>18800</td>
+        <td></td>
+        <td></td>
+        <td>19224</td>
+      </tr>
+      <tr>
+        <td>1-May</td>
+        <td>20415</td>
+        <td></td>
+        <td></td>
+        <td>20739</td>
+      </tr>
+      <tr>
+        <td>2-May</td>
+        <td>22020</td>
+        <td></td>
+        <td></td>
+        <td>22088</td>
+      </tr>
+      <tr>
+        <td>3-May</td>
+        <td>23600</td>
+        <td>26000</td>
+        <td>28000</td>
+        <td>23471</td>
+      </tr>
+      <tr>
+        <td>4-May</td>
+        <td>25190</td>
+        <td></td>
+        <td></td>
+        <td>24905</td>
+      </tr>
+      <tr>
+        <td>5-May</td>
+        <td>26800</td>
+        <td></td>
+        <td></td>
+        <td>26025</td>
+      </tr>
+      <tr>
+        <td>6-May</td>
+        <td>28200</td>
+        <td></td>
+        <td></td>
+        <td>27634</td>
+      </tr>
+      <tr>
+        <td>7-May</td>
+        <td>29050</td>
+        <td></td>
+        <td></td>
+        <td>29616</td>
+      </tr>
+      <tr>
+        <td>8-May</td>
+        <td>31240</td>
+        <td></td>
+        <td></td>
+        <td>31522</td>
+      </tr>
+      <tr>
+        <td>9-May</td>
+        <td>33385</td>
+        <td></td>
+        <td></td>
+        <td>33460</td>
+      </tr>
+      <tr>
+        <td>10-May</td>
+        <td>35530</td>
+        <td>34500</td>
+        <td>37500</td>
+        <td>35022</td>
+      </tr>
+      <tr>
+        <td>11-May</td>
+        <td>37400</td>
+        <td></td>
+        <td></td>
+        <td>36327</td>
+      </tr>
+      <tr>
+        <td>12-May</td>
+        <td>37900</td>
+        <td></td>
+        <td></td>
+        <td>38324</td>
+      </tr>
+      <tr>
+        <td>13-May</td>
+        <td>39950</td>
+        <td></td>
+        <td></td>
+        <td>40184</td>
+      </tr>
+      <tr>
+        <td>14-May</td>
+        <td>41980</td>
+        <td></td>
+        <td></td>
+        <td>42595</td>
+      </tr>
+      <tr>
+        <td>15-May</td>
+        <td>44420</td>
+        <td></td>
+        <td></td>
+        <td>45032</td>
+      </tr>
+      <tr>
+        <td>16-May</td>
+        <td>47030</td>
+        <td></td>
+        <td></td>
+        <td>47144</td>
+      </tr>
+      <tr>
+        <td>17-May</td>
+        <td>49500</td>
+        <td>51500</td>
+        <td>55500</td>
+        <td>49219</td>
+      </tr>
+      <tr>
+        <td>18-May</td>
+        <td>51900</td>
+        <td></td>
+        <td></td>
+        <td>51633</td>
+      </tr>
+      <tr>
+        <td>19-May</td>
+        <td>54400</td>
+        <td></td>
+        <td></td>
+        <td>54346</td>
+      </tr>
+      <tr>
+        <td>20-May</td>
+        <td>56930</td>
+        <td></td>
+        <td></td>
+        <td>56596</td>
+      </tr>
+      <tr>
+        <td>21-May</td>
+        <td>59780</td>
+        <td></td>
+        <td></td>
+        <td>59567</td>
+      </tr>
+      <tr>
+        <td>22-May</td>
+        <td>62680</td>
+        <td></td>
+        <td></td>
+        <td>62527</td>
+      </tr>
+      <tr>
+        <td>22-May</td>
+        <td>65740</td>
+        <td></td>
+        <td></td>
+        <td>65856</td>
+      </tr>
+      <tr>
+        <td>24-May</td>
+        <td>69050</td>
+        <td>67000</td>
+        <td>71000</td>
+        <td>68620</td>
+      </tr>
+      <tr>
+        <td>25-May</td>
+        <td>72300</td>
+        <td></td>
+        <td></td>
+        <td>71105</td>
+      </tr>
+      <tr>
+        <td>26-May</td>
+        <td>75000</td>
+        <td></td>
+        <td></td>
+        <td>74560</td>
+      </tr>
+      <tr>
+        <td>27-May</td>
+        <td>78000</td>
+        <td></td>
+        <td></td>
+        <td>78023</td>
+      </tr>
+      <tr>
+        <td>28-May</td>
+        <td>81520</td>
+        <td></td>
+        <td></td>
+        <td>81400</td>
+      </tr>
+      <tr>
+        <td>29-May</td>
+        <td>85200</td>
+        <td></td>
+        <td></td>
+        <td>84627</td>
+      </tr>
+      <tr>
+        <td>30-May</td>
+        <td>88680</td>
+        <td></td>
+        <td></td>
+        <td>87512</td>
+      </tr>
+      <tr>
+        <td>31-May</td>
+        <td>91110</td>
+        <td>92000</td>
+        <td>96000</td>
+        <td>90664</td>
+      </tr>
+      <tr>
+        <td>1-Jun</td>
+        <td>94265</td>
+        <td></td>
+        <td></td>
+        <td>93435</td>
+      </tr>
+      <tr>
+        <td>2-Jun</td>
+        <td>97200</td>
+        <td></td>
+        <td></td>
+        <td>97326</td>
+      </tr>
+      <tr>
+        <td>3-Jun</td>
+        <td>100820</td>
+        <td></td>
+        <td></td>
+        <td>101239</td>
+      </tr>
+      <tr>
+        <td>4-Jun</td>
+        <td>104740</td>
+        <td></td>
+        <td></td>
+        <td>105680</td>
+      </tr>
+      <tr>
+        <td>5-Jun</td>
+        <td>109100</td>
+        <td></td>
+        <td></td>
+        <td>110026</td>
+      </tr>
+      <tr>
+        <td>6-Jun</td>
+        <td>113650</td>
+        <td></td>
+        <td></td>
+        <td>113619</td>
+      </tr>
+      <tr>
+        <td>7-Jun</td>
+        <td>118220</td>
+        <td>113000</td>
+        <td>117000</td>
+        <td>117103</td>
+      </tr>
+      <tr>
+        <td>8-Jun</td>
+        <td>121900</td>
+        <td></td>
+        <td></td>
+        <td>120102</td>
+      </tr>
+      <tr>
+        <td>9-Jun</td>
+        <td>124400</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>10-Jun</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>11-Jun</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>12-Jun</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>13-Jun</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>14-Jun</td>
+        <td></td>
+        <td>142500</td>
+        <td>147500</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>15-Jun</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Versión anterior: <a href="https://www.monterrey.cinvestav.mx/msantillan/Coronavirus-06-08-2020" target="_blank">8 de junio de 2020</a></p>
+
+
+</body>
+</html>
