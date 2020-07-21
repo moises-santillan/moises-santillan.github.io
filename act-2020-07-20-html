@@ -11,13 +11,11 @@
 <body>
   <h3>Evolución de la epidemia de COVID-19 en México</h3>
   <p><b>Moisés Santillán</b></p>
-  <p>Actualización al 21 de julio<br> 
-  <a href="act-2020-07-20.html">Versión anterior</a><br>
+  <p>Actualización al 20 de julio<br> 
+  <a href="act-2020-07-19.html">Versión anterior</a><br>
   <a href="covid19-Mexico.html">English version</a></p>
 
-  <p>Después del reporte de ayer, continúa la tendencia que he descrito en días pasados. Es decir, a nivel nacional, la indicencia de ingresos hospitalarios está descenciendo lentamente. En la mayoría de las entidades federativas, dicha incidencia o bien ha dejado de aumentar, o bien va a la baja. Las excepciones son Baja California Sur y Zacatecas.</p>
-
-  <p>Desde hace tiempo me he dedicado a analizar la tendencia de la epidemia, tanto a nivel nacional como en las entidades federativas, usando la incidencia de ingresos hospitalarios como indicador. Aunque conocer la tendencia es muy útil en mi opinión. Es necesario también tener una idea de la magnitud de la epidemia. Para ello necesitaríamos estimar la cantidad de personas que se han contagiado y se están contagiando día con día. Desafortunadamente, por las razones que he discutido con anterioridad, me parece que el número de casos confirmados por la Secretaría de Salud no es un parámetro útil para este propósito. Una manera de estimar, o al menos acotar, el número de personas que se han contagiado de COVID-19 en el país, sería establecer una relación de proporcionalidad con respecto al número de ingresos hospitalarios. Pues bien, el día 8 de abril, el Dr. López Gatel dijo que de acuerdo con sus estimaciones, habría del orden de 8 pacientes sintomáticos por cada caso confirmado. En esas mismas fechas, la relación entre casos confirmados y pacientes hospitalizados era de 3 a 1. Finalmente, diversos reportes internacionales coinciden en que al menos hay un paciente asintomático por cada sintomático. Tomando en cuenta todas estas relaciones, tenemos que el la cantidad de personas que han contraido la enfermedad en el país sería del orden de 50 veces más grande que el número de pacientes hospitalizados. Como el número de pacientes hospitalizados por COVID-19 a la fecha es de 99,325, la cantidad de personas que habrían contraído la enfermedad sería del orden de 5 millones, al menos. En el país, la incidencia de ingresos hospitalarios es del orden de 1,000 pacientes por día. Esto equivaldría a una tasa de contagios de 50,000 por día, por lo menos.</p>
+  <p>El día de hoy no hay mucho que comentar, pues básicamente se mantienen las tendencias de los últimos días. A nivel nacional la incidencia de ingresos hospitalarios sigue en descenso. Con la excepción de Baja California Sur y Zacatecas, los contagios parecen haber dejado de aumentar en las entidades federativas. En el caso particular de Nuevo León, en días pasados daba las impresión de que los contagios iban disminuyendo. Sin embargo, después de los reportes de los últimos días, la tendencia ha cambiado, y ahora parece que la incidencia de ingresos hospitalarios se ha estacionado en una meseta.</p>
 
   <p><b>Metodología y datos adicionales</b></p>
 
