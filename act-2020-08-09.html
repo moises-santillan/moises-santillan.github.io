@@ -11,13 +11,13 @@
 <body>
   <h3>Evolución de la epidemia de COVID-19 en México</h3>
   <p><b>Moisés Santillán</b></p>
-  <p>Actualización al 10 de agosto<br> 
-  <a href="act-2020-08-09.html">Versión anterior</a><br>
+  <p>Actualización al 9 de agosto<br> 
+  <a href="act-2020-08-08.html">Versión anterior</a><br>
   <a href="covid19-Mexico.html">English version</a></p>
 
-    <p>Por primera vez desde que inició la epidemia, la cantidad de casos confirmados durante la semana pasada disminuyó con respecto a los casos confirmados la semana anterior. Es decir, parece que finalmente se alcanzó el pico en lo que a la incidencia de casos confirmados se refiere. Este pico ocuure más o menos un mes después que el pico de ingresos hospitalarios. Como ya he explicado, la discrepancia se debe a que, de un tiempo para acá, varias entidades federativas han incrementado el número de pruebas aplicadas, y por lo tanto ha aumentado la fracción de pacientes ambulatorios confirmados.</p>
+  <p>En esta entrega he incluido algunas modificaciones en la forma de analizar los datos. Por una parte, he alargado el análisis de <i>nowcasting</i> para tener datos en tiempos más cercanos al presente. Ahora, presento las estimaciones del número de ingresos hospitalarios de pacientes cuyos síntomas iniciaron hasta 3 días en el pasado a nivel nacional, y hasta hace 5 días en las entidades federativas. Esto se puede hacer debido a que en todos lados ha habido una cantidad considerable de ingresos hospitalarios, lo que a su vez permite que el análisis estadístico sea más confiable. Por otra parte, las de R<sub>e</sub> presentaban muchas oscilaciones, sobre todo en los estados. Esto se debe a que el método utilizado era sensible a fluctuaciones de pocos días de duración, que no necesariamente representaban un cambio en la tendencia. Para evitar esto, ahora suavizo las series de tiempo de la incidencia de ingresos hospitalarios por medio de un filtro de Savitzky-Golay, con parámetros elegidos de tal manera que el número reproductivo efectivo no sea sensible a fluctuaciones de corto plazo.</p>
 
-    <p>La incidencia diaria de ingresos hospitalarios continúa con una tendencia a la baja en el país. En las entidades federativas, la tendencia es también a la baja o estable en todas ellas (considerando un periodo de 2 a 3 semanas). En Aguascalientes, Baja California Sur, Nuevo León y Quintana Roo ha habido un aumento en la incidencia de ingresos hospitalarios en los últimos días. Sin embargo, podrían ser simplemente fluctuaciones aleatorias. En algunos días veremos si se confirma un cambio de tendencia.</p>
+  <p>Los cambios metodológicos arriba descritos nos permiten tener una idea de la evolución de la epidemia hasta tiempos más cercanos al presente. A nivel nacional, no hay cambios en la tendencia pues la incidencia de ingresos hospitalarios continúa a la baja. Donde sí se observan algunos cambios es en las entidades federativas. En algunas no quedaba claro si la epidemia continuaba acelerándose o no. Sin embargo, el nuevo análisis sugiere que, afortunadamente, la epidemia no está aumentando de intensidad en ninguna entidad federativa.</p>
 
   <p><b>Metodología y datos adicionales</b></p>
 
