@@ -11,12 +11,14 @@
 <body>
   <h3>Evolución de la epidemia de COVID-19 en México</h3>
   <p><b>Moisés Santillán</b></p>
-  <p>Gráficas actualizadas al 30 de octubre<br> 
+  update october 31st  <p>Gráficas actualizadas al 31 de octubre<br> 
     Comentarios actualizados al 25 de octubre<br> 
     <a href="act-2020-10-24.html">Versión anterior</a><br>
     <a href="covid19-Mexico.html">English version</a></p>
 
   <p>Al término de esta semana se puede apreciar que la indicencia de ingresos hospitalarios se ha estabilizado en el país en alrededor de 650 casos díarios, y que esta tentencia se ha mantenido desde mediados de septiembre (recordemos que en este análisis los datos se organizan de acuerdo a la fecha de inicio de síntomas). En lo que respecta a las entidades federativas, no hay ninguna en la que se aprecie con la claridad que la intensidad de la epidemia está disminuyendo. En algunas de ellas, la incidencia de ingresos hospitalarios se ha estabilizado (aunque es preciso reconocer que en estados como Chiapas, Campeche o Sonora, la epidemia se ha estabilizado en una incidencia de ingresos hospitalarios baja). Sin embargo, en muchos otros se ha observado un repunte reciente. En Coahuila, Chihuahua, Durango y Guerrero, todavía no es claro si el repunte ha cesado o continúa creciendo. Habrá que esperar a la próxima semana para tener una idea más clara. Por otra parte, En Guanajuato, Guerrero, Nuevo León, Oaxaca, San Luis Potosí y Yucatán, recientemente ocurrieron repuntes de distintos tamaños, pero en todos los casos es más o menos claro que la incidencia de ingresos hospitalarios ha dejado de aumentar. Finalmente, en Jalisco, Tlaxcala y Zacatecas podría estar ocurriendo un repunte. Sin embargo es prematuro asegurarlo, pues bien podría tratarse de fluctuaciones transitorias.</p>
+
+  <p><i>Post Data.</i> Desde hace pocos días introduje un cambio en la metodología que utilizo para el <i>nowcasting</i>. La razón es que consistentemente estaba obteniendo valores que subestimaban la incidencia de ingresos hospitalarios en la última semana. Este efecto era más notorio entre los domingos y los miércoles, y está relacionado con las fluctuaciones tan grandes en el flujo de los datos. Una alternativa era cortar el reporte hasta unos 7 o 10 días en el pasado, pero eso haría que perdiera un poco de sentido el <i>nowcasting</i>. En lugar de eso, decidí hacer el <i>nowcasting</i>> con la metodología que he venido empleando y cortarlo hasta 10 días en el pasado, y a partir de entonces extrapolar usando un modelo autoregresivo. Con esta nueva metodología, se puede apreciar que la intensidad de la epidemia está aumentando en una gran cantidad de entidades federativas, y que incluso a nivel nacional se nota una leve tendencia al alza.</p>
   
   <p><b>Metodología y datos adicionales</b></p>
 
