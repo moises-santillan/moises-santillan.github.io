@@ -3,7 +3,7 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>COVID-19 en México en tiempo real</title>
+  <title>Page Title</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
   <script src='main.js'></script>
@@ -11,16 +11,14 @@
 <body>
   <h3>Evolución de la epidemia de COVID-19 en México</h3>
   <p><b>Moisés Santillán</b></p>
-  <p>Gráficas actualizadas al 1 de noviembre<br> 
-    Comentarios actualizados al 1 de noviembre<br> 
-    <a href="act-2020-10-31.html">Versión anterior</a><br>
+  <p>Gráficas actualizadas al 31 de octubre<br> 
+    Comentarios actualizados al 25 de octubre<br> 
+    <a href="act-2020-10-24.html">Versión anterior</a><br>
     <a href="covid19-Mexico.html">English version</a></p>
 
-  <p>La semana pasada introduje un cambio en la metodología que utilizo para llevar a cabo el análisis de <i>nowcasting</i>. La razón es que consistentemente estaba obteniendo valores que subestimaban la incidencia de ingresos hospitalarios en la última semana. Este efecto era más notorio entre los domingos y los miércoles, y está relacionado con las fluctuaciones tan grandes en el flujo de los casos confirmados. Una alternativa era cortar el reporte hasta unos 7 o 10 días en el pasado, pero eso haría que perdiera un poco de sentido el <i>nowcasting</i>. En lugar de eso, decidí hacer el <i>nowcasting</i>> con la metodología que he venido empleando y cortarlo hasta 10 días en el pasado, y a partir de entonces extrapolar usando un modelo autoregresivo.</p>
+  <p>Al término de esta semana se puede apreciar que la indicencia de ingresos hospitalarios se ha estabilizado en el país en alrededor de 650 casos díarios, y que esta tentencia se ha mantenido desde mediados de septiembre (recordemos que en este análisis los datos se organizan de acuerdo a la fecha de inicio de síntomas). En lo que respecta a las entidades federativas, no hay ninguna en la que se aprecie con la claridad que la intensidad de la epidemia está disminuyendo. En algunas de ellas, la incidencia de ingresos hospitalarios se ha estabilizado (aunque es preciso reconocer que en estados como Chiapas, Campeche o Sonora, la epidemia se ha estabilizado en una incidencia de ingresos hospitalarios baja). Sin embargo, en muchos otros se ha observado un repunte reciente. En Coahuila, Chihuahua, Durango y Guerrero, todavía no es claro si el repunte ha cesado o continúa creciendo. Habrá que esperar a la próxima semana para tener una idea más clara. Por otra parte, En Guanajuato, Guerrero, Nuevo León, Oaxaca, San Luis Potosí y Yucatán, recientemente ocurrieron repuntes de distintos tamaños, pero en todos los casos es más o menos claro que la incidencia de ingresos hospitalarios ha dejado de aumentar. Finalmente, en Jalisco, Tlaxcala y Zacatecas podría estar ocurriendo un repunte. Sin embargo es prematuro asegurarlo, pues bien podría tratarse de fluctuaciones transitorias.</p>
 
-  <p> Con la nueva metodología de <i>nowcasting</i>, se puede apreciar que ha iniciado un repunte en la intensidad de la epidemia. A nivel nacional se nota una sostenida tendencia al alza, que se ha mantenido desde la última semana de septiembre. En muchas entidades federativas también se observa un incremento sostenido (durante las últimas 4 o 5 semanas) en la incidencia de ingresos hospitalarios: Aguascalientes, Baja California Sur, Ciudad de México, Coahuila, Chihuahua, Durango, Guanajuato, Hidalgo, Jalisco, Estado de México, Nuevo León, Querétaro, San Luis Potosí, Tlaxcala, y Zacatecas. En algunos casos, los aumentos han sido bastante moderados y/o se han desacelerado (Baja California Sur, Ciudad de México, Guanajuato, Estado de México, Michoacán, Tlaxcala). En otros estados, aunque hubo un incremento significativo en la incidencia de ingresos hospitalarios, ésta ya se ha estacionado o lo está haciendo (Hidalgo, Jalisco, Nuevo León, Querétaro, San Luis Potosí, Zacatecas). El estado de Chihuahua entra dentro de la categoría anterior. Sin embargo, lo destaco porque el pico actual de ingresos hospitalarios sobrepasa por mucho lo que se había observado en el pasado. Finalmente, quiero enfatizar los casos de Coahuila y Durango, donde la incidencia de ingresos hospitalarios ha superado los máximos anteriormente observados, y no hay indicios claros de que la velocidad con que se incrementa la intensidad de la epidemia esté disminuyendo.</p>
-
-  <p>El 5 de octubre hubo un cambio en la metodología con que la Secretaría de Salud contabiliza los casos positivos reportados en su base de datos. A partir de entonces, se cuentan no sólo los casos positivos diagnosticados mediante la prueba de PCR. Tanbién se incluyen cados diagnosticados por asociación. Este cambio me imposibilitó continuar con las proyecciones diarias y semanales que hacía desde marzo. Sin embargo, cono ya van más de 3 semanas con la nueva metodología, hay suficientes datos para continuar con el análisis de tendencias. Así, a partir de hoy estaré incluyendo nuevamente las mencionadas proyecciones.</p>
+  <p><i>Post Data.</i> Desde hace pocos días introduje un cambio en la metodología que utilizo para el <i>nowcasting</i>. La razón es que consistentemente estaba obteniendo valores que subestimaban la incidencia de ingresos hospitalarios en la última semana. Este efecto era más notorio entre los domingos y los miércoles, y está relacionado con las fluctuaciones tan grandes en el flujo de los datos. Una alternativa era cortar el reporte hasta unos 7 o 10 días en el pasado, pero eso haría que perdiera un poco de sentido el <i>nowcasting</i>. En lugar de eso, decidí hacer el <i>nowcasting</i>> con la metodología que he venido empleando y cortarlo hasta 10 días en el pasado, y a partir de entonces extrapolar usando un modelo autoregresivo. Con esta nueva metodología, se puede apreciar que la intensidad de la epidemia está aumentando en una gran cantidad de entidades federativas, y que incluso a nivel nacional se nota una leve tendencia al alza.</p>
   
   <p><b>Metodología y datos adicionales</b></p>
 
@@ -51,7 +49,6 @@
   <!--<p>En la Figura 2 se aprecia que el estado actual de la epidemia es bastante heterogéneo entre entidades federativas. Pero éste también es el caso entre municipios. </p>
     
    En el siguiente mapa interactivo se muestra la incidencia diaria de ingresos hospitalarios, promediada durante la penúltima semana, normalizada por el tamaño de la población en cada uno de los municipios del país.</p>
-
   <iframe src="Fig03.html" width=100% height=650  class="center"></iframe>--> 
 
   <p>La Figura 2 muestra una instantanea del estado actual de la epidemia, pero no nos dicen si el número de casos activos está aumentando o disminuyendo. Esta última información nos la proporciona en número reproductivo efectivo, que estima el número promedio de contagios debidos a un individuo infeccioso, mientras dura enfermo. En la Figura 3 se muestra la distribución de valores más recientes de este parámetro en las distintas entidades del país.</p>
@@ -59,7 +56,6 @@
   <iframe src="Fig04.html" width=100% height=500></iframe>
 
   <!--<p>Para tener una imagen más clara de la evolución espacio temporal de la epidemia en México, a continuación presento una animación en la que se aprecia mejor cómo la incidencia de ingresos hospitalarios, normalizada por el tamaño de la población, ha ido evolucionando en los diferentes municipios del país.</p>
-
   <video width="800" height="480" controls>
     <source src="AnimacionMunicipios.mp4" type="video/mp4">
   </video> -->
@@ -74,12 +70,11 @@
 
   <iframe src="Fig06.html" width=100% height=500></iframe>
 
-  <p><b>Proyecciones</b></p>
-
-  <p>Con base en el análisis de tendencias le los casos positivos confirmados diariamente por la Secretaría de Salud, he venido haciendo proyecciones diarias y semanales para la epidemia de coronavirus a nivel nacional. En la siguiente tabla, se presentan dichas proyecciones, junto con los datos confirmados posteriormente.</p>
-
+<!--
+<p><b>Proyecciones</b></p>
+  <p>Con base en el análisis de tendencias y en los resultados del modelo, he venido haciendo proyecciones diarias y semanales para la epidemia de coronavirus a nivel nacional. En la siguiente tabla, se presentan dichas proyecciones, junto con los datos confirmados posteriormente.</p>
   <iframe src="Tabla.html" width=100% height=1600></iframe>
-
+-->
 
 </body>
 </html>
