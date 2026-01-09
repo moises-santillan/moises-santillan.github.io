@@ -10,13 +10,10 @@ nav-order: 1
 **Investigador Cinvestav 3E**
 
 **Contact**
-Centro de Investigación y de Estudios Avanzados del IPN
-Unidad Monterrey
-Vía del Conocimiento 201
-Parque de Investigación e Innovación Tecnológica
-66628 Apodaca NL, México
-Tel: +52 81 11561740 x 4519
-Email: [msantillan@cinvestav.mx](mailto:msantillan@cinvestav.mx)
+* Centro de Investigación y de Estudios Avanzados del IPN, Unidad Monterrey
+* Vía del Conocimiento 201, Parque de Investigación e Innovación Tecnológica, 66628 Apodaca NL, México
+* Tel: +52 81 11561740 x 4519
+* Email: [msantillan@cinvestav.mx](mailto:msantillan@cinvestav.mx)
 
 **Education**
 * **BSc in Physics,** 1992, Instituto Politécnico Nacional, Escuela Superior de Física y Matemáticas
