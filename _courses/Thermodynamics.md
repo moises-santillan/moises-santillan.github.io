@@ -20,6 +20,7 @@ The primary goal of this course is to provide a unified conceptual framework, tr
 * **Ionic Transport across Membranes**: An in-depth study of the biophysical mechanisms of cellular transport, a critical topic for applying physics to biological systems.
 
 **Learning Outcome**
+
 By the end of the course, students will have reinforced their mastery of thermodynamics and statistical physics. They will possess a robust toolkit for both current research and advanced academic evaluations, gaining the unique ability to apply the rigor of fundamental physics to the evolving challenges of biomedical engineering and life sciences.
 
 **Support Material**:
