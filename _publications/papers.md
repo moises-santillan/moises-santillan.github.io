@@ -1,7 +1,7 @@
 ---
 layout: publications
 title: Papers
-id: 1
+type_id: 1
 permalink: /publications/papers/
 ---
 
