@@ -1,7 +1,7 @@
 ---
 layout: courses
 title: Mathematical Biology
-id: 1
+course_id: 1
 permalink: /courses/mathematical-biology/
 ---
 
