@@ -8,7 +8,7 @@ permalink: /
 nav-include: false
 ---
 
-![Photo](assets/images/photo.png)
+![Photo](assets/images/photo.png){width=200}
 
 * **Full Researcher at Cinvestav Monterrey**
 * **PI** of the [Quantitative Physiology Lab](https://github.com/moises-santillan/LabSite)
