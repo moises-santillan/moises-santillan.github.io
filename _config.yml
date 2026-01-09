@@ -18,12 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Formus Botánico
+title: Moisés Santillán - Personal Site
+author: Moisés Santillán
 email: moises.santillan.zeron@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Jardín Botánico Digital del Colegio Formus
+  Moisés Santillán - Personal Site
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://moises-santillan.github.io/jardin-botanico" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://moises-santillan.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
@@ -38,13 +39,13 @@ minima:
 # _config.yml
 
 collections:
-  botanica:
+  publications:
     output: true
-    permalink: /Botanica/:name/
+    permalink: /publications/:name/
   
-  catalogo:
+  courses:
     output: true
-    permalink: /Catalogo/:name/
+    permalink: /courses/:name/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
