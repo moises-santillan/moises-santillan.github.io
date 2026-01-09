@@ -10,8 +10,8 @@ nav-order: 3
 
 Over time, I have taught the following courses. In the corresponding links you can find more information.
 
-<ul class="plant-list">
-{% assign courses_coleccion = site.courses | sort: "id" %}
+<ul class="course-list">
+{% assign courses_coleccion = site.courses | sort: "course_id" %}
 {% for course in courses_coleccion %}
   <li>
     <a href="{{ course.url | relative_url }}">
