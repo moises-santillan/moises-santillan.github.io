@@ -10,5 +10,6 @@ nav-include: false
 
 <img src="assets/images/photo.png" alt="Photo" width="200">
 
-* **Full Researcher at Cinvestav Monterrey**
+* **Full Researcher** at Cinvestav Monterrey
 * **PI** of the [Quantitative Physiology Lab](https://github.com/moises-santillan/LabSite)
+* **Email:** [msantillan AT cinvestav.mx](mailto:msantillan@cinvestav.mx)
