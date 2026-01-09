@@ -1,7 +1,7 @@
 ---
 layout: publications
 title: Essays
-id: 3
+type_id: 3
 permalink: /publications/essays/
 ---
 
