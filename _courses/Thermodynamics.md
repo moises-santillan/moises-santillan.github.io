@@ -13,9 +13,9 @@ Designed and updated for graduate students in the Biomedical Engineering and Phy
 
 The primary goal of this course is to provide a unified conceptual framework, transforming disparate topics into a homogeneous body of knowledge. Moving beyond traditional textbook boundaries, this course is specifically crafted to bridge the gap between fundamental physics and its practical applications in the life sciences.
 
-**Key Topics in the Curriculum:**
+**Key Topics in the Curriculum**
 
-* **Unified Fundamentals**: A comprehensive review of core concepts using consistent notation and style to highlight the underlying coherence of thermodynamics and statistical mechanics (both classical and quantum).
+* **Unified Fundamentals**: A comprehensive review of core concepts using consistent notation and style to highlight the underlying coherence of thermodynamics and statistical physics (both classical and quantum).
 * **Thermodynamics of Chemical Reactions**: A specialized module focused on the energetic transformations behind chemical processes, essential for biomedical engineering.
 * **Ionic Transport across Membranes**: An in-depth study of the biophysical mechanisms of cellular transport, a critical topic for applying physics to biological systems.
 
@@ -25,6 +25,4 @@ By the end of the course, students will have reinforced their mastery of thermod
 
 **Support Material**:
 
-To assist with your studies, a comprehensive set of course notes is available.
-
-* **Course Notes (Spanish)**: Access the complete digital repository of notes. [Access Notes Here](https://moises-santillan.github.io/TermoNotas/)
+To assist with your studies, a comprehensive set of course notes is available (in Spanish): [Notas de Termodinámica y Fisica Estadística](https://moises-santillan.github.io/TermoNotas/)

@@ -13,7 +13,7 @@ Designed for graduate students in the MSc program in Biomedical Engineering and 
 
 Students will explore biological phenomena across a vast spectrum—from the molecular mechanisms of a single cell to the complex interactions within entire ecosystems. By investigating classic models, you will master advanced mathematical and numerical-analysis techniques essential for modern research.
 
-**Key Topics in the Curriculum**:
+**Key Topics in the Curriculum**
 
 * **Fundamental Dynamics**: Explore ordinary differential equations through intriguing questions like "Why don't clouds fall?" and the mechanics of microbial swimming.
 * **Growth & Decay Models**: Understand the stochastic processes behind exponential growth, radiocarbon dating, and the theoretical limits of bacterial populations.
@@ -25,7 +25,13 @@ Students will explore biological phenomena across a vast spectrum—from the mol
 
 By the conclusion of the term, students will possess a robust, working knowledge of Mathematical Biology, equipped with the tools to simulate, analyze, and predict the behavior of complex biological systems.
 
-**Core References**:
+**Support Material**
+
+*Textbook*
+
+To assist with your studies, a concise textbook is available: [Mathematical Modeling for Life Sciences: A Primer](https://moises-santillan.github.io/MathBiol-Book/)
+
+*Additional References*
 
 1. *Mathematics as a Laboratory Tool* by J. Milton and T. Ohira.
 2. *Nonlinear Dynamics and Chaos* by S. H. Strogatz.
