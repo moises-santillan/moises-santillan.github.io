@@ -27,11 +27,11 @@ By the conclusion of the term, students will possess a robust, working knowledge
 
 **Support Material**
 
-*Textbook*
+* **Textbook**
 
-To assist with your studies, a concise textbook is available: [Mathematical Modeling for Life Sciences: A Primer](https://moises-santillan.github.io/MathBiol-Book/)
+    To assist with your studies, a concise textbook is available: [Mathematical Modeling for Life Sciences: A Primer](https://moises-santillan.github.io/MathBiol-Book/)
 
-*Additional References*
+* **Additional References**
 
-1. *Mathematics as a Laboratory Tool* by J. Milton and T. Ohira.
-2. *Nonlinear Dynamics and Chaos* by S. H. Strogatz.
+    1. *Mathematics as a Laboratory Tool* by J. Milton and T. Ohira.
+    2. *Nonlinear Dynamics and Chaos* by S. H. Strogatz.
