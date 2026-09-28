@@ -1,0 +1,8 @@
+---
+title: Lists of Publications
+---
+
+* [Papers](publications/papers.qmd)
+* [Books & Book Chapters](publications/books.qmd)
+* [Essays](publications/essays.qmd)
+

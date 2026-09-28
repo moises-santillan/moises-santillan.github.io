@@ -1,0 +1,9 @@
+---
+title: Courses
+---
+
+Over time, I have taught the following courses. In the corresponding links you can find more information.
+
+
+* [Mathematical Biology](courses/mathematical_biology.qmd)
+* [Thermodynamics](courses/thermodynamics.qmd)

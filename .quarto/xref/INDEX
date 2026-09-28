@@ -4,5 +4,29 @@
   },
   "about.qmd": {
     "about.html": "196c7f8e"
+  },
+  "curriculum.qmd": {
+    "curriculum.html": "e8b0e29a"
+  },
+  "publications/papers.qmd": {
+    "papers.html": "cefb0b96"
+  },
+  "publications/books.qmd": {
+    "books.html": "64ef3371"
+  },
+  "publications/essays.qmd": {
+    "essays.html": "101186d4"
+  },
+  "publications.qmd": {
+    "publications.html": "1715f2f3"
+  },
+  "courses.qmd": {
+    "courses.html": "d9a724b5"
+  },
+  "courses/mathematical_biology.qmd": {
+    "mathematical_biology.html": "80940f12"
+  },
+  "courses/thermodynamics.qmd": {
+    "thermodynamics.html": "91aba81e"
   }
 }

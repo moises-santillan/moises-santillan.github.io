@@ -3,12 +3,19 @@ project:
   output-dir: docs
 
 website:
-  title: "moises-santillan.github.io"
+  title: "Moisés Santillán"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: curriculum.qmd
+        text: CV
+      - href: publications.qmd
+        text: Publications
+      - href: courses.qmd
+        text: Courses
+  margin-header: | 
+      ![](/media/cinvestav.png){width=75}
 
 format:
   html:
@@ -17,6 +24,5 @@ format:
       - brand
     css: styles.css
     toc: true
-
 
 

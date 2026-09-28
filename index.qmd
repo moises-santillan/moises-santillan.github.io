@@ -1,7 +1,23 @@
 ---
-title: "moises-santillan.github.io"
+title: "Moisés Santillán"
+image: media/photo.png
+toc: false
+about:
+  template: jolla
+  image-shape: rectangle
+  image-width: 10em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/moisés-santillán-1689181b/
+      target: _blank
+    - text: GitHub
+      href: https://github.com/moises-santillan
+      target: _blank 
+    - text: Email
+      href: mailto:msantillan@cinvestav.mx
 ---
 
-This is a Quarto website.
+Welcome to my personal webssite. 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I am a researcher at [Cinvestav Monterrey](https://www.cinvestav.mx/monterrey), where I direct the [Quantitative Physiology Lab](https://moises-santillan.github.io/LabSite). My work focuses on integrating mathematical modeling, computational approaches, and biological data to understand complex physiological systems.
+
