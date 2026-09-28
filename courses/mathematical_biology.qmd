@@ -24,9 +24,8 @@ By the conclusion of the term, students will possess a robust, working knowledge
 
 **Support Material**
 
-* **Textbook**
-
-    To assist with your studies, reading material and numerical excercises are available in this GitHub [Repository](https://github.com/moises-santillan/MathematicalBiology)
+* **Numerical Excercis
+    To assist with your studies, some numerical excercises are available in this GitHub [Repository](https://github.com/moises-santillan/MathBiol-Exercises)
 
 * **Additional References**
 
